@@ -6,6 +6,7 @@ var port = process.env.PORT || 8080;
 var routesIndex = require('./routes/index');
 var routesHome = require('./routes/home');
 var routesTodo = require('./routes/todo');
+var routesDiscussion = require('./routes/discussion');
 
 // Serve static files
 app.use(express.static(__dirname + '/public'));
@@ -14,6 +15,7 @@ app.use(express.static(__dirname + '/public'));
 app.use('/', routesIndex);
 app.use('/home', routesHome);
 app.use('/todo', routesTodo);
+app.use('/discussion', routesDiscussion);
 
 // View Engine To ejs
 app.set('view engine', 'ejs');

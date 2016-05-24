@@ -5,6 +5,7 @@ module.exports = {
     main :'./public/entry/index.js',
     home :'./public/entry/home.js',
     todo :'./public/entry/todo.js',
+    discussion :'./public/entry/discussion.js',
   },
   output: {
     path: 'public/build',

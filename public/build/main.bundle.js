@@ -52,7 +52,7 @@
 
 	var _reactDom = __webpack_require__(158);
 
-	var _IndexApp = __webpack_require__(161);
+	var _IndexApp = __webpack_require__(166);
 
 	var _IndexApp2 = _interopRequireDefault(_IndexApp);
 
@@ -19671,7 +19671,12 @@
 /***/ },
 /* 159 */,
 /* 160 */,
-/* 161 */
+/* 161 */,
+/* 162 */,
+/* 163 */,
+/* 164 */,
+/* 165 */,
+/* 166 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -19684,7 +19689,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _WelcomeButton = __webpack_require__(165);
+	var _WelcomeButton = __webpack_require__(167);
 
 	var _WelcomeButton2 = _interopRequireDefault(_WelcomeButton);
 
@@ -19702,10 +19707,7 @@
 	});
 
 /***/ },
-/* 162 */,
-/* 163 */,
-/* 164 */,
-/* 165 */
+/* 167 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
