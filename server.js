@@ -7,6 +7,7 @@ var routesIndex = require('./routes/index');
 var routesHome = require('./routes/home');
 var routesTodo = require('./routes/todo');
 var routesDiscussion = require('./routes/discussion');
+var routesApi = require('./routes/api');
 
 // Serve static files
 app.use(express.static(__dirname + '/public'));
@@ -16,6 +17,7 @@ app.use('/', routesIndex);
 app.use('/home', routesHome);
 app.use('/todo', routesTodo);
 app.use('/discussion', routesDiscussion);
+app.use('/api', routesApi);
 
 // View Engine To ejs
 app.set('view engine', 'ejs');
