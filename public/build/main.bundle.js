@@ -19670,33 +19670,7 @@
 
 /***/ },
 /* 159 */,
-/* 160 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = _react2.default.createClass({
-	  displayName: 'PageHeader',
-	  render: function render() {
-	    return _react2.default.createElement(
-	      'h2',
-	      null,
-	      this.props.title
-	    );
-	  }
-	});
-
-/***/ },
+/* 160 */,
 /* 161 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -19710,9 +19684,9 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _PageHeader = __webpack_require__(160);
+	var _WelcomeButton = __webpack_require__(165);
 
-	var _PageHeader2 = _interopRequireDefault(_PageHeader);
+	var _WelcomeButton2 = _interopRequireDefault(_WelcomeButton);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -19722,11 +19696,53 @@
 	    return _react2.default.createElement(
 	      'div',
 	      { className: 'slds' },
-	      _react2.default.createElement(_PageHeader2.default, { title: '-- Index Page --' }),
+	      _react2.default.createElement(_WelcomeButton2.default, null)
+	    );
+	  }
+	});
+
+/***/ },
+/* 162 */,
+/* 163 */,
+/* 164 */,
+/* 165 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = _react2.default.createClass({
+	  displayName: "WelcomeButton",
+
+
+	  getInitialState: function getInitialState() {
+	    return {
+	      buttonLabel: "Welcome React × Node EJS Demo"
+	    };
+	  },
+
+	  _onclick: function _onclick() {
+	    location.href = "/home";
+	    return false;
+	  },
+
+	  render: function render() {
+	    return _react2.default.createElement(
+	      "div",
+	      { className: "slds" },
 	      _react2.default.createElement(
-	        'p',
-	        null,
-	        'Welcome React × Node EJS Template'
+	        "button",
+	        { className: "slds-button slds-button--brand", onClick: this._onclick },
+	        this.state.buttonLabel
 	      )
 	    );
 	  }

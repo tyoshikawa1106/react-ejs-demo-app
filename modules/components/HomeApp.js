@@ -5,8 +5,7 @@ export default React.createClass({
   render() {
     return (
       <div className="slds">
-        <PageHeader title="-- Home Page --" />
-        <p>Hello World</p>
+        <iframe src="https://facebook.github.io/react/docs/tutorial-ja-JP.html" width="100%" height="550px" />
       </div>
     )
   }

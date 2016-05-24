@@ -19694,12 +19694,7 @@
 	    return _react2.default.createElement(
 	      'div',
 	      { className: 'slds' },
-	      _react2.default.createElement(_PageHeader2.default, { title: '-- Home Page --' }),
-	      _react2.default.createElement(
-	        'p',
-	        null,
-	        'Hello World'
-	      )
+	      _react2.default.createElement('iframe', { src: 'https://facebook.github.io/react/docs/tutorial-ja-JP.html', width: '100%', height: '550px' })
 	    );
 	  }
 	});

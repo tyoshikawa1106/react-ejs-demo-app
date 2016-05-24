@@ -1,12 +1,11 @@
 import React from 'react'
-import PageHeader from './PageHeader'
+import WelcomeButton from './WelcomeButton'
 
 export default React.createClass({
   render() {
     return (
       <div className="slds">
-        <PageHeader title="-- Index Page --" />
-        <p>Welcome React × Node EJS Template</p>
+        <WelcomeButton />
       </div>
     )
   }
