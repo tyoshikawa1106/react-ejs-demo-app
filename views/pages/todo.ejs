@@ -1,24 +1,10 @@
-<!-- views/pages/index.ejs -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <% include ../partials/head %>
   </head>
   <body class="slds">
-    <header>
-      <% include ../partials/siteHeader %>
-    </header>
-    <div class="slds-grid">
-      <nav role="nav" class="slds-col slds-size--2-of-12 sideMenu">
-        <% include ../partials/sideMenu %>
-      </nav>
-      <main class="slds-col slds-size--10-of-12">
-        <% include ../partials/pageHeader %>
-        <div class="slds-m-around--small">
-          <div id="app"></div>
-        </div>
-      </main>
-    </div>
+    <div id="app"></div>
     <script src="./build/todo.bundle.js"></script>
   </body>
 </html>

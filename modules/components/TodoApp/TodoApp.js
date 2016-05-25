@@ -1,6 +1,9 @@
 import React from 'react'
+import Header from '../Header/Header'
+import PageHeader from '../PageHeader/PageHeader'
+import SideMenu from '../SideMenu/SideMenu'
 import TodoCreator from '../TodoCreator/TodoCreator'
-import TodoList from '../TodoCreator/TodoCreator'
+import TodoList from '../TodoList/TodoList'
 
 export default React.createClass({
 
@@ -24,12 +27,24 @@ export default React.createClass({
     });
   },
 
-
   render: function(){
     return (
-      <div className="TodoApp">
-        <TodoCreator onAdd={this.onAdd}/>
-        <TodoList todos={this.state.todos} onDelete={this.onDelete}/>
+      <div>
+        <Header />
+        <div className="slds-grid">
+          <nav role="nav" className="slds-col slds-size--2-of-12 siteNavi">
+            <SideMenu />
+          </nav>
+          <main className="slds-col slds-size--10-of-12 siteMain">
+            <PageHeader title="Todo Pages" />
+            <div className="slds-m-around--small">
+              <div className="TodoApp">
+                <TodoCreator onAdd={this.onAdd}/>
+                <TodoList todos={this.state.todos} onDelete={this.onDelete}/>
+              </div>
+            </div>
+          </main>
+        </div>
       </div>
     );
   }
