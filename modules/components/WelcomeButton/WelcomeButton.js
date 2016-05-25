@@ -4,7 +4,7 @@ export default React.createClass({
 
   getInitialState: function(){
     return {
-      buttonLabel: "Welcome React × Node EJS Demo"
+      buttonLabel: "Welcome React Demo Apps"
     }
   },
 
