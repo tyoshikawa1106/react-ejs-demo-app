@@ -7,6 +7,7 @@ module.exports = {
     todo :'./public/entry/todo.js',
     discussion :'./public/entry/discussion.js',
     counter :'./public/entry/counter.js',
+    reactslick :'./public/entry/reactslick.js',
   },
   output: {
     path: 'public/build',

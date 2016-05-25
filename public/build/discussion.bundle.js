@@ -52,7 +52,7 @@
 
 	var _reactDom = __webpack_require__(38);
 
-	var _DiscussionApp = __webpack_require__(180);
+	var _DiscussionApp = __webpack_require__(182);
 
 	var _DiscussionApp2 = _interopRequireDefault(_DiscussionApp);
 
@@ -20936,6 +20936,15 @@
 	            { className: 'slds-list__item nav-list' },
 	            _react2.default.createElement(
 	              'a',
+	              { href: '/reactslick' },
+	              'ReactSlick'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            { className: 'slds-list__item nav-list' },
+	            _react2.default.createElement(
+	              'a',
 	              { href: '/' },
 	              'Logout'
 	            )
@@ -20981,13 +20990,15 @@
 
 
 	// module
-	exports.push([module.id, ".sideMenu {\n  font-weight: bold;\n  min-height: 800px;\n  box-shadow: 2px 0 2px rgba(0, 0, 0, 0.1);\n  background-color: #e8eaf6; }\n", ""]);
+	exports.push([module.id, ".sideMenu {\n  font-weight: bold;\n  min-height: 1200px;\n  box-shadow: 2px 0 2px rgba(0, 0, 0, 0.1);\n  background-color: #e8eaf6; }\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 180 */
+/* 180 */,
+/* 181 */,
+/* 182 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21012,7 +21023,7 @@
 
 	var _SideMenu2 = _interopRequireDefault(_SideMenu);
 
-	var _CommentBox = __webpack_require__(181);
+	var _CommentBox = __webpack_require__(183);
 
 	var _CommentBox2 = _interopRequireDefault(_CommentBox);
 
@@ -21049,7 +21060,7 @@
 	});
 
 /***/ },
-/* 181 */
+/* 183 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21062,11 +21073,11 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _CommentForm = __webpack_require__(182);
+	var _CommentForm = __webpack_require__(184);
 
 	var _CommentForm2 = _interopRequireDefault(_CommentForm);
 
-	var _CommentList = __webpack_require__(183);
+	var _CommentList = __webpack_require__(185);
 
 	var _CommentList2 = _interopRequireDefault(_CommentList);
 
@@ -21129,7 +21140,7 @@
 	});
 
 /***/ },
-/* 182 */
+/* 184 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21219,7 +21230,7 @@
 	});
 
 /***/ },
-/* 183 */
+/* 185 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21232,7 +21243,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Comment = __webpack_require__(184);
+	var _Comment = __webpack_require__(186);
 
 	var _Comment2 = _interopRequireDefault(_Comment);
 
@@ -21263,7 +21274,7 @@
 	});
 
 /***/ },
-/* 184 */
+/* 186 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";

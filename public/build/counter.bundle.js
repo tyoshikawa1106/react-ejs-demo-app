@@ -20359,7 +20359,7 @@
 
 	var _SideMenu2 = _interopRequireDefault(_SideMenu);
 
-	var _CounterBox = __webpack_require__(191);
+	var _CounterBox = __webpack_require__(180);
 
 	var _CounterBox2 = _interopRequireDefault(_CounterBox);
 
@@ -20997,6 +20997,15 @@
 	            { className: 'slds-list__item nav-list' },
 	            _react2.default.createElement(
 	              'a',
+	              { href: '/reactslick' },
+	              'ReactSlick'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            { className: 'slds-list__item nav-list' },
+	            _react2.default.createElement(
+	              'a',
 	              { href: '/' },
 	              'Logout'
 	            )
@@ -21042,24 +21051,13 @@
 
 
 	// module
-	exports.push([module.id, ".sideMenu {\n  font-weight: bold;\n  min-height: 800px;\n  box-shadow: 2px 0 2px rgba(0, 0, 0, 0.1);\n  background-color: #e8eaf6; }\n", ""]);
+	exports.push([module.id, ".sideMenu {\n  font-weight: bold;\n  min-height: 1200px;\n  box-shadow: 2px 0 2px rgba(0, 0, 0, 0.1);\n  background-color: #e8eaf6; }\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 180 */,
-/* 181 */,
-/* 182 */,
-/* 183 */,
-/* 184 */,
-/* 185 */,
-/* 186 */,
-/* 187 */,
-/* 188 */,
-/* 189 */,
-/* 190 */,
-/* 191 */
+/* 180 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21072,7 +21070,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _CounterItem = __webpack_require__(192);
+	var _CounterItem = __webpack_require__(181);
 
 	var _CounterItem2 = _interopRequireDefault(_CounterItem);
 
@@ -21114,7 +21112,7 @@
 	});
 
 /***/ },
-/* 192 */
+/* 181 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";

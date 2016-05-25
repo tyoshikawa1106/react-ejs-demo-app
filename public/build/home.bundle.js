@@ -52,7 +52,7 @@
 
 	var _reactDom = __webpack_require__(38);
 
-	var _HomeApp = __webpack_require__(185);
+	var _HomeApp = __webpack_require__(187);
 
 	var _HomeApp2 = _interopRequireDefault(_HomeApp);
 
@@ -20936,6 +20936,15 @@
 	            { className: 'slds-list__item nav-list' },
 	            _react2.default.createElement(
 	              'a',
+	              { href: '/reactslick' },
+	              'ReactSlick'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            { className: 'slds-list__item nav-list' },
+	            _react2.default.createElement(
+	              'a',
 	              { href: '/' },
 	              'Logout'
 	            )
@@ -20981,7 +20990,7 @@
 
 
 	// module
-	exports.push([module.id, ".sideMenu {\n  font-weight: bold;\n  min-height: 800px;\n  box-shadow: 2px 0 2px rgba(0, 0, 0, 0.1);\n  background-color: #e8eaf6; }\n", ""]);
+	exports.push([module.id, ".sideMenu {\n  font-weight: bold;\n  min-height: 1200px;\n  box-shadow: 2px 0 2px rgba(0, 0, 0, 0.1);\n  background-color: #e8eaf6; }\n", ""]);
 
 	// exports
 
@@ -20992,7 +21001,9 @@
 /* 182 */,
 /* 183 */,
 /* 184 */,
-/* 185 */
+/* 185 */,
+/* 186 */,
+/* 187 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';

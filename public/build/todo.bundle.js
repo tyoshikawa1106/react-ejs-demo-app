@@ -52,7 +52,7 @@
 
 	var _reactDom = __webpack_require__(38);
 
-	var _TodoApp = __webpack_require__(188);
+	var _TodoApp = __webpack_require__(215);
 
 	var _TodoApp2 = _interopRequireDefault(_TodoApp);
 
@@ -20936,6 +20936,15 @@
 	            { className: 'slds-list__item nav-list' },
 	            _react2.default.createElement(
 	              'a',
+	              { href: '/reactslick' },
+	              'ReactSlick'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            { className: 'slds-list__item nav-list' },
+	            _react2.default.createElement(
+	              'a',
 	              { href: '/' },
 	              'Logout'
 	            )
@@ -20981,7 +20990,7 @@
 
 
 	// module
-	exports.push([module.id, ".sideMenu {\n  font-weight: bold;\n  min-height: 800px;\n  box-shadow: 2px 0 2px rgba(0, 0, 0, 0.1);\n  background-color: #e8eaf6; }\n", ""]);
+	exports.push([module.id, ".sideMenu {\n  font-weight: bold;\n  min-height: 1200px;\n  box-shadow: 2px 0 2px rgba(0, 0, 0, 0.1);\n  background-color: #e8eaf6; }\n", ""]);
 
 	// exports
 
@@ -20995,7 +21004,34 @@
 /* 185 */,
 /* 186 */,
 /* 187 */,
-/* 188 */
+/* 188 */,
+/* 189 */,
+/* 190 */,
+/* 191 */,
+/* 192 */,
+/* 193 */,
+/* 194 */,
+/* 195 */,
+/* 196 */,
+/* 197 */,
+/* 198 */,
+/* 199 */,
+/* 200 */,
+/* 201 */,
+/* 202 */,
+/* 203 */,
+/* 204 */,
+/* 205 */,
+/* 206 */,
+/* 207 */,
+/* 208 */,
+/* 209 */,
+/* 210 */,
+/* 211 */,
+/* 212 */,
+/* 213 */,
+/* 214 */,
+/* 215 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21020,11 +21056,11 @@
 
 	var _SideMenu2 = _interopRequireDefault(_SideMenu);
 
-	var _TodoCreator = __webpack_require__(189);
+	var _TodoCreator = __webpack_require__(216);
 
 	var _TodoCreator2 = _interopRequireDefault(_TodoCreator);
 
-	var _TodoList = __webpack_require__(190);
+	var _TodoList = __webpack_require__(217);
 
 	var _TodoList2 = _interopRequireDefault(_TodoList);
 
@@ -21088,7 +21124,7 @@
 	});
 
 /***/ },
-/* 189 */
+/* 216 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21156,7 +21192,7 @@
 	});
 
 /***/ },
-/* 190 */
+/* 217 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
