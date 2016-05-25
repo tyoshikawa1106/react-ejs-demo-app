@@ -48,9 +48,11 @@ export default React.createClass({
   },
   render: function() {
     return (
-      <div className="commentBox">
-        <CommentForm onCommentSubmit={this.handleCommentSubmit} />
-        <CommentList data={this.state.data} />
+      <div className="comment-box-component">
+        <div className="commentBox">
+          <CommentForm onCommentSubmit={this.handleCommentSubmit} />
+          <CommentList data={this.state.data} />
+        </div>
       </div>
     );
   }

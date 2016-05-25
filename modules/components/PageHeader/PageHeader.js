@@ -13,7 +13,7 @@ export default React.createClass({
   },
   render() {
     return (
-      <div>
+      <div className="page-header-component">
         <div className="slds-page-header pageHeader">
           <div className="slds-grid">
             <div className="slds-col slds-has-flexi-truncate">

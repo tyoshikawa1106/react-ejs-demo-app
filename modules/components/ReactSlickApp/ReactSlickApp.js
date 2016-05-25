@@ -7,7 +7,7 @@ import ReactSlickBox from '../ReactSlickBox/ReactSlickBox'
 export default React.createClass({
   render() {
     return (
-      <div>
+      <div className="react-slick-app-component">
         <Header />
         <div className="slds-grid">
           <nav role="nav" className="slds-col slds-size--2-of-12 siteNavi">

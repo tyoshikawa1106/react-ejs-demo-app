@@ -7,7 +7,7 @@ import CommentBox from '../CommentBox/CommentBox'
 export default React.createClass({
   render() {
     return (
-      <div>
+      <div className="descusion-app-component">
         <Header />
         <div className="slds-grid">
           <nav role="nav" className="slds-col slds-size--2-of-12 siteNavi">

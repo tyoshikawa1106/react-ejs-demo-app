@@ -16,7 +16,7 @@ export default React.createClass({
 
   render: function(){
     return (
-      <tr >
+      <tr className="counter-item-component">
         <td>
           <span className="slds-text-heading--large">$ {this.state.countNum}</span>
         </td>

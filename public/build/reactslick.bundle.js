@@ -20357,7 +20357,7 @@
 	  render: function render() {
 	    return _react2.default.createElement(
 	      'div',
-	      null,
+	      { className: 'header-component' },
 	      _react2.default.createElement('header', { className: 'siteHeader' })
 	    );
 	  }
@@ -20744,7 +20744,7 @@
 	  render: function render() {
 	    return _react2.default.createElement(
 	      'div',
-	      null,
+	      { className: 'page-header-component' },
 	      _react2.default.createElement(
 	        'div',
 	        { className: 'slds-page-header pageHeader' },
@@ -20860,7 +20860,7 @@
 
 
 	// module
-	exports.push([module.id, ".pageHeader {\n  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); }\n", ""]);
+	exports.push([module.id, ".page-header-component .pageHeader {\n  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); }\n", ""]);
 
 	// exports
 
@@ -20888,7 +20888,7 @@
 	  render: function render() {
 	    return _react2.default.createElement(
 	      'div',
-	      null,
+	      { className: 'side-menu-component' },
 	      _react2.default.createElement(
 	        'div',
 	        { className: 'sideMenu' },
@@ -20990,7 +20990,7 @@
 
 
 	// module
-	exports.push([module.id, ".sideMenu {\n  font-weight: bold;\n  min-height: 1200px;\n  box-shadow: 2px 0 2px rgba(0, 0, 0, 0.1);\n  background-color: #e8eaf6; }\n", ""]);
+	exports.push([module.id, ".side-menu-component .sideMenu {\n  font-weight: bold;\n  min-height: 1200px;\n  box-shadow: 2px 0 2px rgba(0, 0, 0, 0.1);\n  background-color: #e8eaf6; }\n", ""]);
 
 	// exports
 
@@ -21042,7 +21042,7 @@
 	  render: function render() {
 	    return _react2.default.createElement(
 	      'div',
-	      null,
+	      { className: 'react-slick-app-component' },
 	      _react2.default.createElement(_Header2.default, null),
 	      _react2.default.createElement(
 	        'div',
@@ -21089,7 +21089,7 @@
 
 	var _ReactSlickStarter2 = _interopRequireDefault(_ReactSlickStarter);
 
-	var _ReactSlickImages = __webpack_require__(220);
+	var _ReactSlickImages = __webpack_require__(215);
 
 	var _ReactSlickImages2 = _interopRequireDefault(_ReactSlickImages);
 
@@ -21103,7 +21103,7 @@
 	  render: function render() {
 	    return _react2.default.createElement(
 	      'div',
-	      null,
+	      { className: 'react-slick-box-component' },
 	      _react2.default.createElement(
 	        'div',
 	        { className: 'bottom-margin' },
@@ -23153,7 +23153,7 @@
 	    };
 	    return _react2.default.createElement(
 	      'div',
-	      null,
+	      { className: 'react-slick-starter-component' },
 	      _react2.default.createElement(
 	        'h2',
 	        { className: 'slds-text-heading--medium' },
@@ -23161,7 +23161,7 @@
 	      ),
 	      _react2.default.createElement(
 	        'div',
-	        { className: 'padding' },
+	        { className: 'container' },
 	        _react2.default.createElement(
 	          _reactSlick2.default,
 	          settings,
@@ -23260,15 +23260,105 @@
 
 
 	// module
-	exports.push([module.id, ".slick-demo {\n  background: #00558B;\n  color: #fff;\n  line-height: 100px;\n  text-align: center; }\n\n.padding {\n  padding: 40px;\n  background: #419be0; }\n", ""]);
+	exports.push([module.id, ".react-slick-starter-component .slick-demo {\n  background: #00558B;\n  color: #fff;\n  line-height: 100px;\n  text-align: center; }\n\n.react-slick-starter-component .container {\n  padding: 40px;\n  background: #419bb9; }\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 215 */,
-/* 216 */,
-/* 217 */,
+/* 215 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactSlick = __webpack_require__(192);
+
+	var _reactSlick2 = _interopRequireDefault(_reactSlick);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	__webpack_require__(216);
+
+	exports.default = _react2.default.createClass({
+	  displayName: 'ReactSlickImages',
+
+	  render: function render() {
+	    var settings = {
+	      dots: true
+	    };
+	    return _react2.default.createElement(
+	      'div',
+	      { className: 'react-slick-images-component' },
+	      _react2.default.createElement(
+	        'h2',
+	        { className: 'slds-text-heading--medium' },
+	        'React Slick Images'
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'container' },
+	        _react2.default.createElement(
+	          _reactSlick2.default,
+	          settings,
+	          _react2.default.createElement('img', { src: 'https://placehold.jp/1000x300.png' }),
+	          _react2.default.createElement('img', { src: 'http://placekitten.com/1000/300' }),
+	          _react2.default.createElement('img', { src: 'https://placehold.jp/1000x300.png' }),
+	          _react2.default.createElement('img', { src: 'http://placekitten.com/1000/300' })
+	        )
+	      )
+	    );
+	  }
+	});
+
+/***/ },
+/* 216 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(217);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(173)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./ReactSlickImages.scss", function() {
+				var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./ReactSlickImages.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 217 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(172)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".react-slick-images-component .container {\n  margin: 0 auto;\n  padding: 40px;\n  color: #333;\n  background: #419be0; }\n  .react-slick-images-component .container img {\n    width: 1000px;\n    height: 300px; }\n", ""]);
+
+	// exports
+
+
+/***/ },
 /* 218 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -23303,100 +23393,7 @@
 
 
 	// module
-	exports.push([module.id, ".bottom-margin {\n  margin-bottom: 20px; }\n", ""]);
-
-	// exports
-
-
-/***/ },
-/* 220 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactSlick = __webpack_require__(192);
-
-	var _reactSlick2 = _interopRequireDefault(_reactSlick);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	__webpack_require__(221);
-
-	exports.default = _react2.default.createClass({
-	  displayName: 'ReactSlickImages',
-
-	  render: function render() {
-	    var settings = {
-	      dots: true
-	    };
-	    return _react2.default.createElement(
-	      'div',
-	      null,
-	      _react2.default.createElement(
-	        'h2',
-	        { className: 'slds-text-heading--medium' },
-	        'React Slick Images'
-	      ),
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'container' },
-	        _react2.default.createElement(
-	          _reactSlick2.default,
-	          settings,
-	          _react2.default.createElement('img', { src: 'https://placehold.jp/1000x300.png' }),
-	          _react2.default.createElement('img', { src: 'http://placekitten.com/1000/300' }),
-	          _react2.default.createElement('img', { src: 'https://placehold.jp/1000x300.png' }),
-	          _react2.default.createElement('img', { src: 'http://placekitten.com/1000/300' })
-	        )
-	      )
-	    );
-	  }
-	});
-
-/***/ },
-/* 221 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(222);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(173)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./ReactSlickImages.scss", function() {
-				var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./ReactSlickImages.scss");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 222 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(172)();
-	// imports
-
-
-	// module
-	exports.push([module.id, ".container {\n  margin: 0 auto;\n  padding: 40px;\n  color: #333;\n  background: #419be0; }\n  .container img {\n    width: 1000px;\n    height: 300px; }\n", ""]);
+	exports.push([module.id, ".react-slick-box-component .bottom-margin {\n  margin-bottom: 20px; }\n", ""]);
 
 	// exports
 

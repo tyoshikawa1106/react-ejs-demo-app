@@ -4,7 +4,7 @@ require('./SideMenu.scss');
 export default React.createClass({
   render() {
     return (
-      <div>
+      <div className="side-menu-component">
         <div className="sideMenu">
           <ul className="slds-list--vertical slds-has-dividers">
             <li className="slds-list__item nav-list"><a href="/home">Home</a></li>

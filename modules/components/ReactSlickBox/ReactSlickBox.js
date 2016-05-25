@@ -7,7 +7,7 @@ require('./ReactSlickBox.scss');
 export default React.createClass({
   render: function () {
     return (
-      <div>
+      <div className="react-slick-box-component">
         <div className="bottom-margin">
           <ReactSlickStarter />
         </div>

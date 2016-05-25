@@ -15,7 +15,7 @@ export default React.createClass({
 
   render() {
     return (
-      <div className="slds">
+      <div className="welcome-button-component">
         <button className="slds-button slds-button--brand" onClick={this._onclick}>{this.state.buttonLabel}</button>
       </div>
     )

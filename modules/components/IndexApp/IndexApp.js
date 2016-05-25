@@ -6,7 +6,7 @@ import WelcomeButton from '../WelcomeButton/WelcomeButton'
 export default React.createClass({
   render() {
     return (
-      <div>
+      <div className="index-app-component">
         <Header />
         <main>
           <PageHeader title="Index Pages" />

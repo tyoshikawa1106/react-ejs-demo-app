@@ -10,11 +10,13 @@ export default React.createClass({
       );
     });
     return (
-      <div className="commentList">
-        <div className="slds-feed">
-          <ul className="slds-feed__list">
-            {commentNodes}
-          </ul>
+      <div className="comment-list-component">
+        <div className="commentList">
+          <div className="slds-feed">
+            <ul className="slds-feed__list">
+              {commentNodes}
+            </ul>
+          </div>
         </div>
       </div>
     );

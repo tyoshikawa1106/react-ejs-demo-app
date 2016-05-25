@@ -20357,7 +20357,7 @@
 	  render: function render() {
 	    return _react2.default.createElement(
 	      'div',
-	      null,
+	      { className: 'header-component' },
 	      _react2.default.createElement('header', { className: 'siteHeader' })
 	    );
 	  }
@@ -20744,7 +20744,7 @@
 	  render: function render() {
 	    return _react2.default.createElement(
 	      'div',
-	      null,
+	      { className: 'page-header-component' },
 	      _react2.default.createElement(
 	        'div',
 	        { className: 'slds-page-header pageHeader' },
@@ -20860,7 +20860,7 @@
 
 
 	// module
-	exports.push([module.id, ".pageHeader {\n  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); }\n", ""]);
+	exports.push([module.id, ".page-header-component .pageHeader {\n  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); }\n", ""]);
 
 	// exports
 
@@ -20888,7 +20888,7 @@
 	  render: function render() {
 	    return _react2.default.createElement(
 	      'div',
-	      null,
+	      { className: 'side-menu-component' },
 	      _react2.default.createElement(
 	        'div',
 	        { className: 'sideMenu' },
@@ -20990,7 +20990,7 @@
 
 
 	// module
-	exports.push([module.id, ".sideMenu {\n  font-weight: bold;\n  min-height: 1200px;\n  box-shadow: 2px 0 2px rgba(0, 0, 0, 0.1);\n  background-color: #e8eaf6; }\n", ""]);
+	exports.push([module.id, ".side-menu-component .sideMenu {\n  font-weight: bold;\n  min-height: 1200px;\n  box-shadow: 2px 0 2px rgba(0, 0, 0, 0.1);\n  background-color: #e8eaf6; }\n", ""]);
 
 	// exports
 
@@ -21034,7 +21034,7 @@
 	  render: function render() {
 	    return _react2.default.createElement(
 	      'div',
-	      null,
+	      { className: 'descusion-app-component' },
 	      _react2.default.createElement(_Header2.default, null),
 	      _react2.default.createElement(
 	        'div',
@@ -21132,9 +21132,13 @@
 	  render: function render() {
 	    return _react2.default.createElement(
 	      'div',
-	      { className: 'commentBox' },
-	      _react2.default.createElement(_CommentForm2.default, { onCommentSubmit: this.handleCommentSubmit }),
-	      _react2.default.createElement(_CommentList2.default, { data: this.state.data })
+	      { className: 'comment-box-component' },
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'commentBox' },
+	        _react2.default.createElement(_CommentForm2.default, { onCommentSubmit: this.handleCommentSubmit }),
+	        _react2.default.createElement(_CommentList2.default, { data: this.state.data })
+	      )
 	    );
 	  }
 	});
@@ -21181,47 +21185,51 @@
 	  render: function render() {
 	    return _react2.default.createElement(
 	      'div',
-	      { className: 'slds-box slds-m-bottom--small' },
+	      { className: 'comment-form-component' },
 	      _react2.default.createElement(
-	        'form',
-	        { onSubmit: this.handleSubmit },
+	        'div',
+	        { className: 'slds-box slds-m-bottom--small' },
 	        _react2.default.createElement(
-	          'div',
-	          { className: 'slds-form-element' },
+	          'form',
+	          { onSubmit: this.handleSubmit },
 	          _react2.default.createElement(
-	            'label',
-	            { className: 'slds-form-element__label', htmlFor: 'text-input-01' },
-	            'NickName'
+	            'div',
+	            { className: 'slds-form-element' },
+	            _react2.default.createElement(
+	              'label',
+	              { className: 'slds-form-element__label', htmlFor: 'text-input-01' },
+	              'NickName'
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'slds-form-element__control' },
+	              _react2.default.createElement('input', { type: 'text', className: 'slds-input', id: 'text-input-01', placeholder: 'Your name',
+	                value: this.state.author, onChange: this.handleAuthorChange })
+	            )
 	          ),
 	          _react2.default.createElement(
 	            'div',
-	            { className: 'slds-form-element__control' },
-	            _react2.default.createElement('input', { type: 'text', className: 'slds-input', id: 'text-input-01', placeholder: 'Your name',
-	              value: this.state.author, onChange: this.handleAuthorChange })
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'slds-form-element' },
-	          _react2.default.createElement(
-	            'label',
-	            { className: 'slds-form-element__label', htmlFor: 'text-input-02' },
-	            'Comments'
+	            { className: 'slds-form-element' },
+	            _react2.default.createElement(
+	              'label',
+	              { className: 'slds-form-element__label', htmlFor: 'text-input-02' },
+	              'Comments'
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'slds-form-element__control' },
+	              _react2.default.createElement('input', { type: 'text', className: 'slds-input', placeholder: 'Say something...',
+	                value: this.state.text, onChange: this.handleTextChange })
+	            )
 	          ),
 	          _react2.default.createElement(
 	            'div',
-	            { className: 'slds-form-element__control' },
-	            _react2.default.createElement('input', { type: 'text', className: 'slds-input', placeholder: 'Say something...',
-	              value: this.state.text, onChange: this.handleTextChange })
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'slds-m-top--small' },
-	          _react2.default.createElement(
-	            'button',
-	            { className: 'slds-button slds-button--brand' },
-	            'Post'
+	            { className: 'slds-m-top--small' },
+	            _react2.default.createElement(
+	              'button',
+	              { className: 'slds-button slds-button--brand' },
+	              'Post'
+	            )
 	          )
 	        )
 	      )
@@ -21259,14 +21267,18 @@
 	    });
 	    return _react2.default.createElement(
 	      'div',
-	      { className: 'commentList' },
+	      { className: 'comment-list-component' },
 	      _react2.default.createElement(
 	        'div',
-	        { className: 'slds-feed' },
+	        { className: 'commentList' },
 	        _react2.default.createElement(
-	          'ul',
-	          { className: 'slds-feed__list' },
-	          commentNodes
+	          'div',
+	          { className: 'slds-feed' },
+	          _react2.default.createElement(
+	            'ul',
+	            { className: 'slds-feed__list' },
+	            commentNodes
+	          )
 	        )
 	      )
 	    );
@@ -21296,7 +21308,7 @@
 	  render: function render() {
 	    return _react2.default.createElement(
 	      "li",
-	      { className: "slds-feed__item" },
+	      { className: "comment-component slds-feed__item" },
 	      _react2.default.createElement(
 	        "div",
 	        { className: "slds-media slds-comment slds-hint-parent" },

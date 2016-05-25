@@ -12,9 +12,9 @@ export default React.createClass({
       slidesToScroll: 1,
     };
     return (
-      <div>
+      <div className="react-slick-starter-component">
         <h2 className="slds-text-heading--medium">React Slick Starter</h2>
-        <div className="padding">
+        <div className="container">
           <Slider {...settings}>
             <div className="slick-demo"><h3>1</h3></div>
             <div className="slick-demo"><h3>2</h3></div>

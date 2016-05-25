@@ -20357,7 +20357,7 @@
 	  render: function render() {
 	    return _react2.default.createElement(
 	      'div',
-	      null,
+	      { className: 'header-component' },
 	      _react2.default.createElement('header', { className: 'siteHeader' })
 	    );
 	  }
@@ -20744,7 +20744,7 @@
 	  render: function render() {
 	    return _react2.default.createElement(
 	      'div',
-	      null,
+	      { className: 'page-header-component' },
 	      _react2.default.createElement(
 	        'div',
 	        { className: 'slds-page-header pageHeader' },
@@ -20860,7 +20860,7 @@
 
 
 	// module
-	exports.push([module.id, ".pageHeader {\n  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); }\n", ""]);
+	exports.push([module.id, ".page-header-component .pageHeader {\n  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); }\n", ""]);
 
 	// exports
 
@@ -20909,7 +20909,7 @@
 	  render: function render() {
 	    return _react2.default.createElement(
 	      'div',
-	      null,
+	      { className: 'index-app-component' },
 	      _react2.default.createElement(_Header2.default, null),
 	      _react2.default.createElement(
 	        'main',
@@ -20963,7 +20963,7 @@
 	  render: function render() {
 	    return _react2.default.createElement(
 	      "div",
-	      { className: "slds" },
+	      { className: "welcome-button-component" },
 	      _react2.default.createElement(
 	        "button",
 	        { className: "slds-button slds-button--brand", onClick: this._onclick },

@@ -7,7 +7,7 @@ import CounterBox from '../CounterBox/CounterBox'
 export default React.createClass({
   render() {
     return (
-      <div>
+      <div className="counter-app-component">
         <Header />
         <div className="slds-grid">
           <nav role="nav" className="slds-col slds-size--2-of-12 siteNavi">

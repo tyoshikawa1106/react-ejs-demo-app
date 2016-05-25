@@ -8,7 +8,7 @@ export default React.createClass({
       dots: true
     }
     return (
-      <div>
+      <div className="react-slick-images-component">
         <h2 className="slds-text-heading--medium">React Slick Images</h2>
         <div className='container'>
           <Slider {...settings}>

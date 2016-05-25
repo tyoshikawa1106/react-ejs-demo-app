@@ -52,7 +52,7 @@
 
 	var _reactDom = __webpack_require__(38);
 
-	var _TodoApp = __webpack_require__(215);
+	var _TodoApp = __webpack_require__(220);
 
 	var _TodoApp2 = _interopRequireDefault(_TodoApp);
 
@@ -20357,7 +20357,7 @@
 	  render: function render() {
 	    return _react2.default.createElement(
 	      'div',
-	      null,
+	      { className: 'header-component' },
 	      _react2.default.createElement('header', { className: 'siteHeader' })
 	    );
 	  }
@@ -20744,7 +20744,7 @@
 	  render: function render() {
 	    return _react2.default.createElement(
 	      'div',
-	      null,
+	      { className: 'page-header-component' },
 	      _react2.default.createElement(
 	        'div',
 	        { className: 'slds-page-header pageHeader' },
@@ -20860,7 +20860,7 @@
 
 
 	// module
-	exports.push([module.id, ".pageHeader {\n  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); }\n", ""]);
+	exports.push([module.id, ".page-header-component .pageHeader {\n  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); }\n", ""]);
 
 	// exports
 
@@ -20888,7 +20888,7 @@
 	  render: function render() {
 	    return _react2.default.createElement(
 	      'div',
-	      null,
+	      { className: 'side-menu-component' },
 	      _react2.default.createElement(
 	        'div',
 	        { className: 'sideMenu' },
@@ -20990,7 +20990,7 @@
 
 
 	// module
-	exports.push([module.id, ".sideMenu {\n  font-weight: bold;\n  min-height: 1200px;\n  box-shadow: 2px 0 2px rgba(0, 0, 0, 0.1);\n  background-color: #e8eaf6; }\n", ""]);
+	exports.push([module.id, ".side-menu-component .sideMenu {\n  font-weight: bold;\n  min-height: 1200px;\n  box-shadow: 2px 0 2px rgba(0, 0, 0, 0.1);\n  background-color: #e8eaf6; }\n", ""]);
 
 	// exports
 
@@ -21031,7 +21031,12 @@
 /* 212 */,
 /* 213 */,
 /* 214 */,
-/* 215 */
+/* 215 */,
+/* 216 */,
+/* 217 */,
+/* 218 */,
+/* 219 */,
+/* 220 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21056,11 +21061,11 @@
 
 	var _SideMenu2 = _interopRequireDefault(_SideMenu);
 
-	var _TodoCreator = __webpack_require__(216);
+	var _TodoCreator = __webpack_require__(221);
 
 	var _TodoCreator2 = _interopRequireDefault(_TodoCreator);
 
-	var _TodoList = __webpack_require__(217);
+	var _TodoList = __webpack_require__(222);
 
 	var _TodoList2 = _interopRequireDefault(_TodoList);
 
@@ -21093,7 +21098,7 @@
 	  render: function render() {
 	    return _react2.default.createElement(
 	      'div',
-	      null,
+	      { className: 'todo-app-component' },
 	      _react2.default.createElement(_Header2.default, null),
 	      _react2.default.createElement(
 	        'div',
@@ -21124,7 +21129,7 @@
 	});
 
 /***/ },
-/* 216 */
+/* 221 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21168,21 +21173,25 @@
 	  render: function render() {
 	    return _react2.default.createElement(
 	      'div',
-	      { className: 'slds-box slds-m-bottom--small' },
+	      { className: 'todo-creator-component' },
 	      _react2.default.createElement(
 	        'div',
-	        { className: 'slds-form-element' },
+	        { className: 'slds-box slds-m-bottom--small' },
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'slds-form-element__control slds-input-has-fixed-addon' },
-	          _react2.default.createElement('input', { className: 'slds-input', type: 'text', value: this.state.subjectVal, ref: 'subject', placeholder: 'Input your new todo', onChange: this._onChange }),
+	          { className: 'slds-form-element' },
 	          _react2.default.createElement(
-	            'span',
-	            { className: 'slds-form-element__addon' },
+	            'div',
+	            { className: 'slds-form-element__control slds-input-has-fixed-addon' },
+	            _react2.default.createElement('input', { className: 'slds-input', type: 'text', value: this.state.subjectVal, ref: 'subject', placeholder: 'Input your new todo', onChange: this._onChange }),
 	            _react2.default.createElement(
-	              'button',
-	              { className: 'slds-button slds-button--brand', onClick: this._onAdd },
-	              'Add'
+	              'span',
+	              { className: 'slds-form-element__addon' },
+	              _react2.default.createElement(
+	                'button',
+	                { className: 'slds-button slds-button--brand', onClick: this._onAdd },
+	                'Add'
+	              )
 	            )
 	          )
 	        )
@@ -21192,7 +21201,7 @@
 	});
 
 /***/ },
-/* 217 */
+/* 222 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";

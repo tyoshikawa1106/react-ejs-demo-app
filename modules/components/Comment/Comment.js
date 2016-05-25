@@ -4,7 +4,7 @@ export default React.createClass({
 
   render: function() {
     return (
-      <li className="slds-feed__item">
+      <li className="comment-component slds-feed__item">
         <div className="slds-media slds-comment slds-hint-parent">
           <div className="slds-media__figure">
             <div className="slds-avatar slds-avatar--circle slds-avatar--medium">
