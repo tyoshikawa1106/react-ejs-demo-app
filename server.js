@@ -21,6 +21,7 @@ var routesIndex = require('./routes/index');
 var routesHome = require('./routes/home');
 var routesTodo = require('./routes/todo');
 var routesDiscussion = require('./routes/discussion');
+var routesCounter = require('./routes/counter');
 var routesApi = require('./routes/api');
 
 // Serve static files
@@ -31,6 +32,7 @@ app.use('/', routesIndex);
 app.use('/home', routesHome);
 app.use('/todo', routesTodo);
 app.use('/discussion', routesDiscussion);
+app.use('/counter', routesCounter);
 app.use('/api', routesApi);
 
 // View Engine To ejs

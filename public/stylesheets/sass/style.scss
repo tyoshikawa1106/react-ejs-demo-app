@@ -3,8 +3,10 @@ $static-font-path: "../../vendor/salesforce-lightning-design-system/assets/fonts
 
 .siteNavi {
   z-index: 1;
+  min-width: 100px;
 }
 
 .siteMain {
   z-index: 0;
+  min-width: 600px;
 }

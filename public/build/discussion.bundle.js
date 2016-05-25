@@ -52,7 +52,7 @@
 
 	var _reactDom = __webpack_require__(38);
 
-	var _DiscussionApp = __webpack_require__(168);
+	var _DiscussionApp = __webpack_require__(180);
 
 	var _DiscussionApp2 = _interopRequireDefault(_DiscussionApp);
 
@@ -20334,68 +20334,7 @@
 	module.exports = ReactMount.renderSubtreeIntoContainer;
 
 /***/ },
-/* 168 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _Header = __webpack_require__(169);
-
-	var _Header2 = _interopRequireDefault(_Header);
-
-	var _PageHeader = __webpack_require__(174);
-
-	var _PageHeader2 = _interopRequireDefault(_PageHeader);
-
-	var _SideMenu = __webpack_require__(175);
-
-	var _SideMenu2 = _interopRequireDefault(_SideMenu);
-
-	var _CommentBox = __webpack_require__(178);
-
-	var _CommentBox2 = _interopRequireDefault(_CommentBox);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = _react2.default.createClass({
-	  displayName: 'DiscussionApp',
-	  render: function render() {
-	    return _react2.default.createElement(
-	      'div',
-	      null,
-	      _react2.default.createElement(_Header2.default, null),
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'slds-grid' },
-	        _react2.default.createElement(
-	          'nav',
-	          { role: 'nav', className: 'slds-col slds-size--2-of-12 siteNavi' },
-	          _react2.default.createElement(_SideMenu2.default, null)
-	        ),
-	        _react2.default.createElement(
-	          'main',
-	          { className: 'slds-col slds-size--10-of-12 siteMain' },
-	          _react2.default.createElement(_PageHeader2.default, { title: 'Desicussion Pages' }),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'slds-m-around--small' },
-	            _react2.default.createElement(_CommentBox2.default, { url: '/api/comments', pollInterval: 100000 })
-	          )
-	        )
-	      )
-	    );
-	  }
-	});
-
-/***/ },
+/* 168 */,
 /* 169 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -20788,7 +20727,7 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	__webpack_require__(188);
+	__webpack_require__(175);
 
 	exports.default = _react2.default.createClass({
 	  displayName: 'PageHeader',
@@ -20890,6 +20829,46 @@
 /* 175 */
 /***/ function(module, exports, __webpack_require__) {
 
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(176);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(173)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./PageHeader.scss", function() {
+				var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./PageHeader.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 176 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(172)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".pageHeader {\n  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); }\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 177 */
+/***/ function(module, exports, __webpack_require__) {
+
 	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
@@ -20902,7 +20881,7 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	__webpack_require__(176);
+	__webpack_require__(178);
 
 	exports.default = _react2.default.createClass({
 	  displayName: 'SideMenu',
@@ -20948,6 +20927,15 @@
 	            { className: 'slds-list__item nav-list' },
 	            _react2.default.createElement(
 	              'a',
+	              { href: '/counter' },
+	              'Counter'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            { className: 'slds-list__item nav-list' },
+	            _react2.default.createElement(
+	              'a',
 	              { href: '/' },
 	              'Logout'
 	            )
@@ -20959,13 +20947,13 @@
 	});
 
 /***/ },
-/* 176 */
+/* 178 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(177);
+	var content = __webpack_require__(179);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(173)(content, {});
@@ -20985,7 +20973,7 @@
 	}
 
 /***/ },
-/* 177 */
+/* 179 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(172)();
@@ -20993,13 +20981,13 @@
 
 
 	// module
-	exports.push([module.id, ".sideMenu {\n  font-weight: bold;\n  min-width: 200px;\n  min-height: 800px;\n  box-shadow: 2px 0 2px rgba(0, 0, 0, 0.1);\n  background-color: #e8eaf6; }\n", ""]);
+	exports.push([module.id, ".sideMenu {\n  font-weight: bold;\n  min-height: 800px;\n  box-shadow: 2px 0 2px rgba(0, 0, 0, 0.1);\n  background-color: #e8eaf6; }\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 178 */
+/* 180 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21012,11 +21000,73 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _CommentForm = __webpack_require__(179);
+	var _Header = __webpack_require__(169);
+
+	var _Header2 = _interopRequireDefault(_Header);
+
+	var _PageHeader = __webpack_require__(174);
+
+	var _PageHeader2 = _interopRequireDefault(_PageHeader);
+
+	var _SideMenu = __webpack_require__(177);
+
+	var _SideMenu2 = _interopRequireDefault(_SideMenu);
+
+	var _CommentBox = __webpack_require__(181);
+
+	var _CommentBox2 = _interopRequireDefault(_CommentBox);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = _react2.default.createClass({
+	  displayName: 'DiscussionApp',
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'div',
+	      null,
+	      _react2.default.createElement(_Header2.default, null),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'slds-grid' },
+	        _react2.default.createElement(
+	          'nav',
+	          { role: 'nav', className: 'slds-col slds-size--2-of-12 siteNavi' },
+	          _react2.default.createElement(_SideMenu2.default, null)
+	        ),
+	        _react2.default.createElement(
+	          'main',
+	          { className: 'slds-col slds-size--10-of-12 siteMain' },
+	          _react2.default.createElement(_PageHeader2.default, { title: 'Desicussion Pages' }),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'slds-m-around--small' },
+	            _react2.default.createElement(_CommentBox2.default, { url: '/api/comments', pollInterval: 100000 })
+	          )
+	        )
+	      )
+	    );
+	  }
+	});
+
+/***/ },
+/* 181 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _CommentForm = __webpack_require__(182);
 
 	var _CommentForm2 = _interopRequireDefault(_CommentForm);
 
-	var _CommentList = __webpack_require__(180);
+	var _CommentList = __webpack_require__(183);
 
 	var _CommentList2 = _interopRequireDefault(_CommentList);
 
@@ -21079,7 +21129,7 @@
 	});
 
 /***/ },
-/* 179 */
+/* 182 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21169,7 +21219,7 @@
 	});
 
 /***/ },
-/* 180 */
+/* 183 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21182,7 +21232,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Comment = __webpack_require__(181);
+	var _Comment = __webpack_require__(184);
 
 	var _Comment2 = _interopRequireDefault(_Comment);
 
@@ -21213,7 +21263,7 @@
 	});
 
 /***/ },
-/* 181 */
+/* 184 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -21278,52 +21328,6 @@
 	    );
 	  }
 	});
-
-/***/ },
-/* 182 */,
-/* 183 */,
-/* 184 */,
-/* 185 */,
-/* 186 */,
-/* 187 */,
-/* 188 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(189);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(173)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./PageHeader.scss", function() {
-				var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./PageHeader.scss");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 189 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(172)();
-	// imports
-
-
-	// module
-	exports.push([module.id, ".pageHeader {\n  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); }\n", ""]);
-
-	// exports
-
 
 /***/ }
 /******/ ]);

@@ -52,13 +52,13 @@
 
 	var _reactDom = __webpack_require__(38);
 
-	var _IndexApp = __webpack_require__(186);
+	var _CounterApp = __webpack_require__(168);
 
-	var _IndexApp2 = _interopRequireDefault(_IndexApp);
+	var _CounterApp2 = _interopRequireDefault(_CounterApp);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	(0, _reactDom.render)(_react2.default.createElement(_IndexApp2.default, null), document.getElementById('app'));
+	(0, _reactDom.render)(_react2.default.createElement(_CounterApp2.default, null), document.getElementById('app'));
 
 /***/ },
 /* 1 */
@@ -20334,7 +20334,68 @@
 	module.exports = ReactMount.renderSubtreeIntoContainer;
 
 /***/ },
-/* 168 */,
+/* 168 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _Header = __webpack_require__(169);
+
+	var _Header2 = _interopRequireDefault(_Header);
+
+	var _PageHeader = __webpack_require__(174);
+
+	var _PageHeader2 = _interopRequireDefault(_PageHeader);
+
+	var _SideMenu = __webpack_require__(177);
+
+	var _SideMenu2 = _interopRequireDefault(_SideMenu);
+
+	var _CounterBox = __webpack_require__(191);
+
+	var _CounterBox2 = _interopRequireDefault(_CounterBox);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = _react2.default.createClass({
+	  displayName: 'CounterApp',
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'div',
+	      null,
+	      _react2.default.createElement(_Header2.default, null),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'slds-grid' },
+	        _react2.default.createElement(
+	          'nav',
+	          { role: 'nav', className: 'slds-col slds-size--2-of-12 siteNavi' },
+	          _react2.default.createElement(_SideMenu2.default, null)
+	        ),
+	        _react2.default.createElement(
+	          'main',
+	          { className: 'slds-col slds-size--10-of-12 siteMain' },
+	          _react2.default.createElement(_PageHeader2.default, { title: 'Conter Pages' }),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'slds-m-around--small' },
+	            _react2.default.createElement(_CounterBox2.default, null)
+	          )
+	        )
+	      )
+	    );
+	  }
+	});
+
+/***/ },
 /* 169 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -20866,16 +20927,7 @@
 
 
 /***/ },
-/* 177 */,
-/* 178 */,
-/* 179 */,
-/* 180 */,
-/* 181 */,
-/* 182 */,
-/* 183 */,
-/* 184 */,
-/* 185 */,
-/* 186 */
+/* 177 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -20888,38 +20940,66 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Header = __webpack_require__(169);
-
-	var _Header2 = _interopRequireDefault(_Header);
-
-	var _PageHeader = __webpack_require__(174);
-
-	var _PageHeader2 = _interopRequireDefault(_PageHeader);
-
-	var _WelcomeButton = __webpack_require__(187);
-
-	var _WelcomeButton2 = _interopRequireDefault(_WelcomeButton);
-
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+	__webpack_require__(178);
+
 	exports.default = _react2.default.createClass({
-	  displayName: 'IndexApp',
+	  displayName: 'SideMenu',
 	  render: function render() {
 	    return _react2.default.createElement(
 	      'div',
 	      null,
-	      _react2.default.createElement(_Header2.default, null),
 	      _react2.default.createElement(
-	        'main',
-	        null,
-	        _react2.default.createElement(_PageHeader2.default, { title: 'Index Pages' }),
+	        'div',
+	        { className: 'sideMenu' },
 	        _react2.default.createElement(
-	          'div',
-	          { className: 'slds-p-around--large' },
+	          'ul',
+	          { className: 'slds-list--vertical slds-has-dividers' },
 	          _react2.default.createElement(
-	            'div',
-	            { className: 'slds-m-top--large slds-text-align--center' },
-	            _react2.default.createElement(_WelcomeButton2.default, null)
+	            'li',
+	            { className: 'slds-list__item nav-list' },
+	            _react2.default.createElement(
+	              'a',
+	              { href: '/home' },
+	              'Home'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            { className: 'slds-list__item nav-list' },
+	            _react2.default.createElement(
+	              'a',
+	              { href: '/todo' },
+	              'Todo'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            { className: 'slds-list__item nav-list' },
+	            _react2.default.createElement(
+	              'a',
+	              { href: '/discussion' },
+	              'Discussion'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            { className: 'slds-list__item nav-list' },
+	            _react2.default.createElement(
+	              'a',
+	              { href: '/counter' },
+	              'Counter'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            { className: 'slds-list__item nav-list' },
+	            _react2.default.createElement(
+	              'a',
+	              { href: '/' },
+	              'Logout'
+	            )
 	          )
 	        )
 	      )
@@ -20928,7 +21008,113 @@
 	});
 
 /***/ },
-/* 187 */
+/* 178 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(179);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(173)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./SideMenu.scss", function() {
+				var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./SideMenu.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 179 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(172)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".sideMenu {\n  font-weight: bold;\n  min-height: 800px;\n  box-shadow: 2px 0 2px rgba(0, 0, 0, 0.1);\n  background-color: #e8eaf6; }\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 180 */,
+/* 181 */,
+/* 182 */,
+/* 183 */,
+/* 184 */,
+/* 185 */,
+/* 186 */,
+/* 187 */,
+/* 188 */,
+/* 189 */,
+/* 190 */,
+/* 191 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _CounterItem = __webpack_require__(192);
+
+	var _CounterItem2 = _interopRequireDefault(_CounterItem);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = _react2.default.createClass({
+	  displayName: 'CounterBox',
+
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'div',
+	      null,
+	      _react2.default.createElement(
+	        'table',
+	        { className: 'slds-table slds-table--bordered', cellpadding: '0', cellspacing: '0', border: '0' },
+	        _react2.default.createElement(
+	          'colgroup',
+	          null,
+	          _react2.default.createElement('col', null),
+	          _react2.default.createElement('col', { width: '50' })
+	        ),
+	        _react2.default.createElement(
+	          'tbody',
+	          null,
+	          _react2.default.createElement(_CounterItem2.default, null),
+	          _react2.default.createElement(_CounterItem2.default, null),
+	          _react2.default.createElement(_CounterItem2.default, null),
+	          _react2.default.createElement(_CounterItem2.default, null),
+	          _react2.default.createElement(_CounterItem2.default, null),
+	          _react2.default.createElement(_CounterItem2.default, null),
+	          _react2.default.createElement(_CounterItem2.default, null),
+	          _react2.default.createElement(_CounterItem2.default, null),
+	          _react2.default.createElement(_CounterItem2.default, null),
+	          _react2.default.createElement(_CounterItem2.default, null)
+	        )
+	      )
+	    );
+	  }
+	});
+
+/***/ },
+/* 192 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -20944,28 +21130,90 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	exports.default = _react2.default.createClass({
-	  displayName: "WelcomeButton",
-
+	  displayName: "CounterItem",
 
 	  getInitialState: function getInitialState() {
 	    return {
-	      buttonLabel: "Welcome React Demo Apps"
+	      countNum: 0
 	    };
 	  },
 
-	  _onclick: function _onclick() {
-	    location.href = "/home";
-	    return false;
+	  _countup: function _countup() {
+	    this.setState({ countNum: this.state.countNum + 1 });
+	  },
+	  _countdown: function _countdown() {
+	    this.setState({ countNum: this.state.countNum - 1 });
 	  },
 
 	  render: function render() {
 	    return _react2.default.createElement(
-	      "div",
-	      { className: "slds" },
+	      "tr",
+	      null,
 	      _react2.default.createElement(
-	        "button",
-	        { className: "slds-button slds-button--brand", onClick: this._onclick },
-	        this.state.buttonLabel
+	        "td",
+	        null,
+	        _react2.default.createElement(
+	          "span",
+	          { className: "slds-text-heading--large" },
+	          "$ ",
+	          this.state.countNum
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "td",
+	        null,
+	        _react2.default.createElement(
+	          "div",
+	          { className: "slds-dropdown-trigger", "aria-expanded": "true" },
+	          _react2.default.createElement(
+	            "button",
+	            { className: "slds-button slds-button--icon-border-filled", "aria-haspopup": "true" },
+	            _react2.default.createElement(
+	              "svg",
+	              { "aria-hidden": "true", className: "slds-button__icon slds-button__icon--hint" },
+	              _react2.default.createElement("use", { xlinkHref: "./vendor/salesforce-lightning-design-system/assets/icons/utility-sprite/svg/symbols.svg#down" })
+	            ),
+	            _react2.default.createElement(
+	              "span",
+	              { className: "slds-assistive-text" },
+	              "Show More"
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "slds-dropdown slds-dropdown--right slds-dropdown--actions slds-dropdown--menu" },
+	            _react2.default.createElement(
+	              "ul",
+	              { className: "dropdown__list", role: "menu" },
+	              _react2.default.createElement(
+	                "li",
+	                { className: "slds-dropdown__item" },
+	                _react2.default.createElement(
+	                  "a",
+	                  { onClick: this._countup, role: "menuitem" },
+	                  _react2.default.createElement(
+	                    "p",
+	                    { className: "slds-truncate" },
+	                    "Up"
+	                  )
+	                )
+	              ),
+	              _react2.default.createElement(
+	                "li",
+	                { className: "slds-dropdown__item" },
+	                _react2.default.createElement(
+	                  "a",
+	                  { onClick: this._countdown, role: "menuitem" },
+	                  _react2.default.createElement(
+	                    "p",
+	                    { className: "slds-truncate" },
+	                    "Down"
+	                  )
+	                )
+	              )
+	            )
+	          )
+	        )
 	      )
 	    );
 	  }

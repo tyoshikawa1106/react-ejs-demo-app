@@ -7185,7 +7185,9 @@ a.slds-button--inverse:focus {
     page-break-after: avoid; } }
 
 .siteNavi {
-  z-index: 1; }
+  z-index: 1;
+  min-width: 100px; }
 
 .siteMain {
-  z-index: 0; }
+  z-index: 0;
+  min-width: 600px; }
