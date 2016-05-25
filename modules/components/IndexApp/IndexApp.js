@@ -1,5 +1,5 @@
 import React from 'react'
-import WelcomeButton from './WelcomeButton'
+import WelcomeButton from '../WelcomeButton/WelcomeButton'
 
 export default React.createClass({
   render() {

@@ -1,6 +1,6 @@
 import React from 'react'
-import TodoCreator from './TodoCreator'
-import TodoList from './TodoList'
+import TodoCreator from '../TodoCreator/TodoCreator'
+import TodoList from '../TodoCreator/TodoCreator'
 
 export default React.createClass({
 

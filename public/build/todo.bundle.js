@@ -20360,10 +20360,6 @@
 
 	var _TodoCreator2 = _interopRequireDefault(_TodoCreator);
 
-	var _TodoList = __webpack_require__(179);
-
-	var _TodoList2 = _interopRequireDefault(_TodoList);
-
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	exports.default = _react2.default.createClass({
@@ -20395,7 +20391,7 @@
 	      'div',
 	      { className: 'TodoApp' },
 	      _react2.default.createElement(_TodoCreator2.default, { onAdd: this.onAdd }),
-	      _react2.default.createElement(_TodoList2.default, { todos: this.state.todos, onDelete: this.onDelete })
+	      _react2.default.createElement(_TodoCreator2.default, { todos: this.state.todos, onDelete: this.onDelete })
 	    );
 	  }
 	});
@@ -20464,141 +20460,6 @@
 	          )
 	        )
 	      )
-	    );
-	  }
-	});
-
-/***/ },
-/* 179 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = _react2.default.createClass({
-	  displayName: "TodoList",
-
-	  _onDelete: function _onDelete(i) {
-	    this.props.onDelete(i);
-	  },
-
-	  render: function render() {
-	    return _react2.default.createElement(
-	      "ul",
-	      { className: "timeline" },
-	      this.props.todos.map(function (todo, i) {
-	        return _react2.default.createElement(
-	          "li",
-	          { className: "slds-timeline__item", key: i },
-	          _react2.default.createElement(
-	            "span",
-	            { className: "slds-assistive-text" },
-	            "Task"
-	          ),
-	          _react2.default.createElement(
-	            "div",
-	            { className: "slds-media" },
-	            _react2.default.createElement(
-	              "div",
-	              { className: "slds-media__body" },
-	              _react2.default.createElement(
-	                "div",
-	                { className: "slds-media slds-media--timeline slds-timeline__media--task" },
-	                _react2.default.createElement(
-	                  "div",
-	                  { className: "slds-media__figure" },
-	                  _react2.default.createElement(
-	                    "svg",
-	                    { "aria-hidden": "true", className: "slds-icon slds-icon-standard-task slds-timeline__icon" },
-	                    _react2.default.createElement("use", { xlinkHref: "./vendor/salesforce-lightning-design-system/assets/icons/standard-sprite/svg/symbols.svg#task" })
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  "div",
-	                  { className: "slds-media__body" },
-	                  _react2.default.createElement(
-	                    "div",
-	                    { className: "slds-media slds-tile slds-media--small" },
-	                    _react2.default.createElement(
-	                      "div",
-	                      { className: "slds-media__figure" },
-	                      _react2.default.createElement(
-	                        "label",
-	                        { className: "slds-checkbox" },
-	                        _react2.default.createElement("input", { type: "checkbox", onClick: this._onDelete.bind(this, i) }),
-	                        _react2.default.createElement("span", { className: "slds-checkbox--faux" }),
-	                        _react2.default.createElement(
-	                          "span",
-	                          { className: "slds-form-element__label slds-assistive-text" },
-	                          "Hello"
-	                        )
-	                      )
-	                    ),
-	                    _react2.default.createElement(
-	                      "div",
-	                      { className: "slds-media__body" },
-	                      _react2.default.createElement(
-	                        "p",
-	                        { className: "slds-tile__title slds-truncate" },
-	                        function () {
-	                          if (todo.status == 0) {
-	                            return _react2.default.createElement(
-	                              "a",
-	                              { href: "#" },
-	                              todo.item
-	                            );
-	                          } else {
-	                            return _react2.default.createElement(
-	                              "a",
-	                              { href: "#" },
-	                              _react2.default.createElement(
-	                                "s",
-	                                null,
-	                                todo.item
-	                              )
-	                            );
-	                          }
-	                        }()
-	                      ),
-	                      _react2.default.createElement(
-	                        "ul",
-	                        { className: "slds-tile__detail slds-list--horizontal slds-text-body--small" },
-	                        _react2.default.createElement(
-	                          "li",
-	                          { className: "slds-list__item slds-m-right--large" },
-	                          _react2.default.createElement(
-	                            "span",
-	                            null,
-	                            "Owner:"
-	                          ),
-	                          _react2.default.createElement(
-	                            "span",
-	                            { className: "slds-m-left--xx-small" },
-	                            _react2.default.createElement(
-	                              "a",
-	                              { href: "#" },
-	                              "Taiki"
-	                            )
-	                          )
-	                        )
-	                      )
-	                    )
-	                  )
-	                )
-	              )
-	            )
-	          )
-	        );
-	      }, this)
 	    );
 	  }
 	});

@@ -1,6 +1,6 @@
 import React from 'react'
-import CommentForm from './CommentForm'
-import CommentList from './CommentList'
+import CommentForm from '../CommentForm/CommentForm'
+import CommentList from '../CommentList/CommentList'
 
 export default React.createClass({
 

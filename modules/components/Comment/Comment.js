@@ -9,7 +9,7 @@ export default React.createClass({
           <div className="slds-media__figure">
             <div className="slds-avatar slds-avatar--circle slds-avatar--medium">
               <a className="#void" title="Jason Rodgers">
-                <img src="./vendor/salesforce-lightning-design-system/assets/images/avatar1.jpg" alt="avatar" />
+                <img src={this.props.avatar} alt="avatar" />
               </a>
             </div>
           </div>

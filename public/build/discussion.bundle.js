@@ -20356,7 +20356,7 @@
 	exports.default = _react2.default.createClass({
 	  displayName: 'DiscussionApp',
 	  render: function render() {
-	    return _react2.default.createElement(_CommentBox2.default, { url: '/api/comments', pollInterval: 2000 });
+	    return _react2.default.createElement(_CommentBox2.default, { url: '/api/comments', pollInterval: 100000 });
 	  }
 	});
 
@@ -20556,7 +20556,7 @@
 
 	  render: function render() {
 	    var commentNodes = this.props.data.map(function (comment) {
-	      return _react2.default.createElement(_Comment2.default, { author: comment.author, key: comment.id, text: comment.text });
+	      return _react2.default.createElement(_Comment2.default, { author: comment.author, key: comment.id, text: comment.text, avatar: './vendor/salesforce-lightning-design-system/assets/images/avatar2.jpg' });
 	    });
 	    return _react2.default.createElement(
 	      'div',
@@ -20610,7 +20610,7 @@
 	            _react2.default.createElement(
 	              "a",
 	              { className: "#void", title: "Jason Rodgers" },
-	              _react2.default.createElement("img", { src: "./vendor/salesforce-lightning-design-system/assets/images/avatar1.jpg", alt: "avatar" })
+	              _react2.default.createElement("img", { src: this.props.avatar, alt: "avatar" })
 	            )
 	          )
 	        ),
