@@ -21113,6 +21113,32 @@
 	        'div',
 	        { className: 'bottom-margin' },
 	        _react2.default.createElement(_ReactSlickImages2.default, null)
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(
+	          'ul',
+	          { className: 'slds-list--dotted' },
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'https://github.com/akiran/react-slick', target: '_blank' },
+	              '"https://github.com/akiran/react-slick"'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'https://jsfiddle.net/kirana/20bumb4g/', target: '_blank' },
+	              '"https://jsfiddle.net/kirana/20bumb4g/"'
+	            )
+	          )
+	        )
 	      )
 	    );
 	  }
