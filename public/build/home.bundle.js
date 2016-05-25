@@ -20715,7 +20715,7 @@
 /* 174 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -20727,8 +20727,10 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+	__webpack_require__(188);
+
 	exports.default = _react2.default.createClass({
-	  displayName: "PageHeader",
+	  displayName: 'PageHeader',
 
 
 	  _toIndex: function _toIndex() {
@@ -20741,83 +20743,83 @@
 	  },
 	  render: function render() {
 	    return _react2.default.createElement(
-	      "div",
+	      'div',
 	      null,
 	      _react2.default.createElement(
-	        "div",
-	        { className: "slds-page-header pageHeader" },
+	        'div',
+	        { className: 'slds-page-header pageHeader' },
 	        _react2.default.createElement(
-	          "div",
-	          { className: "slds-grid" },
+	          'div',
+	          { className: 'slds-grid' },
 	          _react2.default.createElement(
-	            "div",
-	            { className: "slds-col slds-has-flexi-truncate" },
+	            'div',
+	            { className: 'slds-col slds-has-flexi-truncate' },
 	            _react2.default.createElement(
-	              "p",
-	              { className: "slds-text-heading--label" },
-	              "react × node ejs template"
+	              'p',
+	              { className: 'slds-text-heading--label' },
+	              'React × Node'
 	            ),
 	            _react2.default.createElement(
-	              "div",
-	              { className: "slds-grid" },
+	              'div',
+	              { className: 'slds-grid' },
 	              _react2.default.createElement(
-	                "div",
-	                { className: "slds-grid slds-type-focus slds-no-space" },
+	                'div',
+	                { className: 'slds-grid slds-type-focus slds-no-space' },
 	                _react2.default.createElement(
-	                  "h1",
-	                  { className: "slds-page-header__title slds-truncate", title: "Lightning Design System Apps" },
-	                  "Lightning Design System Apps - ",
+	                  'h1',
+	                  { className: 'slds-page-header__title slds-truncate', title: 'Lightning Design System Apps' },
+	                  'Lightning Design System Apps - ',
 	                  this.props.title
 	                )
 	              )
 	            )
 	          ),
 	          _react2.default.createElement(
-	            "div",
-	            { className: "slds-col slds-no-flex slds-align-bottom" },
+	            'div',
+	            { className: 'slds-col slds-no-flex slds-align-bottom' },
 	            _react2.default.createElement(
-	              "div",
-	              { className: "slds-grid" },
+	              'div',
+	              { className: 'slds-grid' },
 	              _react2.default.createElement(
-	                "div",
-	                { className: "slds-button-group", id: "homeIcon", role: "group" },
+	                'div',
+	                { className: 'slds-button-group', id: 'homeIcon', role: 'group' },
 	                _react2.default.createElement(
-	                  "button",
-	                  { className: "slds-button slds-button--icon-border slds-not-selected", onClick: this._toHome },
+	                  'button',
+	                  { className: 'slds-button slds-button--icon-border slds-not-selected', onClick: this._toHome },
 	                  _react2.default.createElement(
-	                    "svg",
-	                    { "aria-hidden": "true", className: "slds-button__icon" },
-	                    _react2.default.createElement("use", { xlinkHref: "./vendor/salesforce-lightning-design-system/assets/icons/utility-sprite/svg/symbols.svg#home" })
+	                    'svg',
+	                    { 'aria-hidden': 'true', className: 'slds-button__icon' },
+	                    _react2.default.createElement('use', { xlinkHref: './vendor/salesforce-lightning-design-system/assets/icons/utility-sprite/svg/symbols.svg#home' })
 	                  ),
 	                  _react2.default.createElement(
-	                    "span",
-	                    { className: "slds-assistive-text" },
-	                    "Home"
+	                    'span',
+	                    { className: 'slds-assistive-text' },
+	                    'Home'
 	                  )
 	                )
 	              ),
 	              _react2.default.createElement(
-	                "div",
-	                { className: "slds-button-group", id: "logoutIcon", role: "group" },
+	                'div',
+	                { className: 'slds-button-group', id: 'logoutIcon', role: 'group' },
 	                _react2.default.createElement(
-	                  "button",
-	                  { className: "slds-button slds-button--icon-border slds-not-selected", onClick: this._toIndex },
+	                  'button',
+	                  { className: 'slds-button slds-button--icon-border slds-not-selected', onClick: this._toIndex },
 	                  _react2.default.createElement(
-	                    "svg",
-	                    { "aria-hidden": "true", className: "slds-button__icon" },
-	                    _react2.default.createElement("use", { xlinkHref: "./vendor/salesforce-lightning-design-system/assets/icons/utility-sprite/svg/symbols.svg#logout" })
+	                    'svg',
+	                    { 'aria-hidden': 'true', className: 'slds-button__icon' },
+	                    _react2.default.createElement('use', { xlinkHref: './vendor/salesforce-lightning-design-system/assets/icons/utility-sprite/svg/symbols.svg#logout' })
 	                  ),
 	                  _react2.default.createElement(
-	                    "span",
-	                    { className: "slds-assistive-text" },
-	                    "Logout"
+	                    'span',
+	                    { className: 'slds-assistive-text' },
+	                    'Logout'
 	                  )
 	                )
 	              )
 	            )
 	          )
 	        ),
-	        _react2.default.createElement("p", { className: "slds-text-body--small slds-page-header__info" })
+	        _react2.default.createElement('p', { className: 'slds-text-body--small slds-page-header__info' })
 	      )
 	    );
 	  }
@@ -20996,6 +20998,51 @@
 	    );
 	  }
 	});
+
+/***/ },
+/* 183 */,
+/* 184 */,
+/* 185 */,
+/* 186 */,
+/* 187 */,
+/* 188 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(189);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(173)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./PageHeader.scss", function() {
+				var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./PageHeader.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 189 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(172)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".pageHeader {\n  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); }\n", ""]);
+
+	// exports
+
 
 /***/ }
 /******/ ]);

@@ -1,4 +1,5 @@
 import React from 'react'
+require('./PageHeader.scss');
 
 export default React.createClass({
 
@@ -16,7 +17,7 @@ export default React.createClass({
         <div className="slds-page-header pageHeader">
           <div className="slds-grid">
             <div className="slds-col slds-has-flexi-truncate">
-              <p className="slds-text-heading--label">React Demo</p>
+              <p className="slds-text-heading--label">React × Node</p>
               <div className="slds-grid">
                 <div className="slds-grid slds-type-focus slds-no-space">
                   <h1 className="slds-page-header__title slds-truncate" title="Lightning Design System Apps">Lightning Design System Apps - {this.props.title}</h1>
