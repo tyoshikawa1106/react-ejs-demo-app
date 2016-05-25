@@ -20398,7 +20398,7 @@
 
 
 	// module
-	exports.push([module.id, ".siteHeader {\n  height: 10px;\n  width: 100%;\n  background-color: #5c2fda; }\n", ""]);
+	exports.push([module.id, ".header-component .siteHeader {\n  height: 10px;\n  width: 100%;\n  background-color: #5c2fda; }\n", ""]);
 
 	// exports
 
