@@ -52,7 +52,7 @@
 
 	var _reactDom = __webpack_require__(38);
 
-	var _HomeApp = __webpack_require__(187);
+	var _HomeApp = __webpack_require__(189);
 
 	var _HomeApp2 = _interopRequireDefault(_HomeApp);
 
@@ -21003,7 +21003,9 @@
 /* 184 */,
 /* 185 */,
 /* 186 */,
-/* 187 */
+/* 187 */,
+/* 188 */,
+/* 189 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';

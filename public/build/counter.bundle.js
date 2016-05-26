@@ -21115,7 +21115,7 @@
 /* 181 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -21125,10 +21125,18 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _CounterItemValue = __webpack_require__(182);
+
+	var _CounterItemValue2 = _interopRequireDefault(_CounterItemValue);
+
+	var _CounterItemMenu = __webpack_require__(183);
+
+	var _CounterItemMenu2 = _interopRequireDefault(_CounterItemMenu);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	exports.default = _react2.default.createClass({
-	  displayName: "CounterItem",
+	  displayName: 'CounterItem',
 
 	  getInitialState: function getInitialState() {
 	    return {
@@ -21145,68 +21153,126 @@
 
 	  render: function render() {
 	    return _react2.default.createElement(
-	      "tr",
-	      { className: "counter-item-component" },
+	      'tr',
+	      { className: 'counter-item-component' },
 	      _react2.default.createElement(
-	        "td",
+	        'td',
 	        null,
-	        _react2.default.createElement(
-	          "span",
-	          { className: "slds-text-heading--large" },
-	          "$ ",
-	          this.state.countNum
-	        )
+	        _react2.default.createElement(_CounterItemValue2.default, { countNum: this.state.countNum })
 	      ),
 	      _react2.default.createElement(
-	        "td",
+	        'td',
 	        null,
+	        _react2.default.createElement(_CounterItemMenu2.default, { _countup: this._countup, _countdown: this._countdown })
+	      )
+	    );
+	  }
+	});
+
+/***/ },
+/* 182 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = _react2.default.createClass({
+	  displayName: "CounterItemValue",
+
+
+	  render: function render() {
+	    return _react2.default.createElement(
+	      "div",
+	      { className: "counter-item-value-component" },
+	      _react2.default.createElement(
+	        "span",
+	        { className: "slds-text-heading--large" },
+	        "$ ",
+	        this.props.countNum
+	      )
+	    );
+	  }
+	});
+
+/***/ },
+/* 183 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = _react2.default.createClass({
+	  displayName: "CounterItemMenu",
+
+
+	  render: function render() {
+	    return _react2.default.createElement(
+	      "div",
+	      { className: "counter-item-menu-component" },
+	      _react2.default.createElement(
+	        "div",
+	        { className: "slds-dropdown-trigger", "aria-expanded": "true" },
 	        _react2.default.createElement(
-	          "div",
-	          { className: "slds-dropdown-trigger", "aria-expanded": "true" },
+	          "button",
+	          { className: "slds-button slds-button--icon-border-filled", "aria-haspopup": "true" },
 	          _react2.default.createElement(
-	            "button",
-	            { className: "slds-button slds-button--icon-border-filled", "aria-haspopup": "true" },
-	            _react2.default.createElement(
-	              "svg",
-	              { "aria-hidden": "true", className: "slds-button__icon slds-button__icon--hint" },
-	              _react2.default.createElement("use", { xlinkHref: "./vendor/salesforce-lightning-design-system/assets/icons/utility-sprite/svg/symbols.svg#down" })
-	            ),
-	            _react2.default.createElement(
-	              "span",
-	              { className: "slds-assistive-text" },
-	              "Show More"
-	            )
+	            "svg",
+	            { "aria-hidden": "true", className: "slds-button__icon slds-button__icon--hint" },
+	            _react2.default.createElement("use", { xlinkHref: "./vendor/salesforce-lightning-design-system/assets/icons/utility-sprite/svg/symbols.svg#down" })
 	          ),
 	          _react2.default.createElement(
-	            "div",
-	            { className: "slds-dropdown slds-dropdown--right slds-dropdown--actions slds-dropdown--menu" },
+	            "span",
+	            { className: "slds-assistive-text" },
+	            "Show More"
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "slds-dropdown slds-dropdown--right slds-dropdown--actions slds-dropdown--menu" },
+	          _react2.default.createElement(
+	            "ul",
+	            { className: "dropdown__list", role: "menu" },
 	            _react2.default.createElement(
-	              "ul",
-	              { className: "dropdown__list", role: "menu" },
+	              "li",
+	              { className: "slds-dropdown__item" },
 	              _react2.default.createElement(
-	                "li",
-	                { className: "slds-dropdown__item" },
+	                "a",
+	                { onClick: this.props._countup, role: "menuitem" },
 	                _react2.default.createElement(
-	                  "a",
-	                  { onClick: this._countup, role: "menuitem" },
-	                  _react2.default.createElement(
-	                    "p",
-	                    { className: "slds-truncate" },
-	                    "Up"
-	                  )
+	                  "p",
+	                  { className: "slds-truncate" },
+	                  "Up"
 	                )
-	              ),
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              { className: "slds-dropdown__item" },
 	              _react2.default.createElement(
-	                "li",
-	                { className: "slds-dropdown__item" },
+	                "a",
+	                { onClick: this.props._countdown, role: "menuitem" },
 	                _react2.default.createElement(
-	                  "a",
-	                  { onClick: this._countdown, role: "menuitem" },
-	                  _react2.default.createElement(
-	                    "p",
-	                    { className: "slds-truncate" },
-	                    "Down"
-	                  )
+	                  "p",
+	                  { className: "slds-truncate" },
+	                  "Down"
 	                )
 	              )
 	            )

@@ -52,7 +52,7 @@
 
 	var _reactDom = __webpack_require__(38);
 
-	var _TodoApp = __webpack_require__(220);
+	var _TodoApp = __webpack_require__(222);
 
 	var _TodoApp2 = _interopRequireDefault(_TodoApp);
 
@@ -21036,7 +21036,9 @@
 /* 217 */,
 /* 218 */,
 /* 219 */,
-/* 220 */
+/* 220 */,
+/* 221 */,
+/* 222 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21061,11 +21063,11 @@
 
 	var _SideMenu2 = _interopRequireDefault(_SideMenu);
 
-	var _TodoCreator = __webpack_require__(221);
+	var _TodoCreator = __webpack_require__(223);
 
 	var _TodoCreator2 = _interopRequireDefault(_TodoCreator);
 
-	var _TodoList = __webpack_require__(222);
+	var _TodoList = __webpack_require__(224);
 
 	var _TodoList2 = _interopRequireDefault(_TodoList);
 
@@ -21129,7 +21131,7 @@
 	});
 
 /***/ },
-/* 221 */
+/* 223 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21201,7 +21203,7 @@
 	});
 
 /***/ },
-/* 222 */
+/* 224 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
