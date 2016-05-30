@@ -24,6 +24,11 @@ export default React.createClass({
                   <p className="slds-truncate">Down</p>
                 </a>
               </li>
+              <li className="slds-dropdown__item">
+                <a onClick={this.props._autoCountup} role="menuitem">
+                  <p className="slds-truncate">Auto</p>
+                </a>
+              </li>
             </ul>
           </div>
         </div>

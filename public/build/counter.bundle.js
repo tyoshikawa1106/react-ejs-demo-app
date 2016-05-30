@@ -21138,17 +21138,36 @@
 	exports.default = _react2.default.createClass({
 	  displayName: 'CounterItem',
 
+
 	  getInitialState: function getInitialState() {
 	    return {
-	      countNum: 0
+	      countNum: 0,
+	      maxCountNum: 1000,
+	      autoCountUpId: null
 	    };
 	  },
 
 	  _countup: function _countup() {
-	    this.setState({ countNum: this.state.countNum + 1 });
+	    if (this.state.countNum < this.state.maxCountNum) {
+	      this.setState({ countNum: this.state.countNum + 1 });
+	    }
 	  },
+
 	  _countdown: function _countdown() {
 	    this.setState({ countNum: this.state.countNum - 1 });
+	  },
+
+	  _autoCountup: function _autoCountup() {
+	    var intervalId = setInterval(this._autoCountupAction, 1);
+	    this.setState({ autoCountUpId: intervalId });
+	  },
+
+	  _autoCountupAction: function _autoCountupAction() {
+	    if (this.state.countNum < this.state.maxCountNum) {
+	      this.setState({ countNum: this.state.countNum + 1 });
+	    } else {
+	      clearInterval(this.state.autoCountUpId);
+	    }
 	  },
 
 	  render: function render() {
@@ -21163,7 +21182,7 @@
 	      _react2.default.createElement(
 	        'td',
 	        null,
-	        _react2.default.createElement(_CounterItemMenu2.default, { _countup: this._countup, _countdown: this._countdown })
+	        _react2.default.createElement(_CounterItemMenu2.default, { _countup: this._countup, _countdown: this._countdown, _autoCountup: this._autoCountup })
 	      )
 	    );
 	  }
@@ -21273,6 +21292,19 @@
 	                  "p",
 	                  { className: "slds-truncate" },
 	                  "Down"
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              { className: "slds-dropdown__item" },
+	              _react2.default.createElement(
+	                "a",
+	                { onClick: this.props._autoCountup, role: "menuitem" },
+	                _react2.default.createElement(
+	                  "p",
+	                  { className: "slds-truncate" },
+	                  "Auto"
 	                )
 	              )
 	            )
