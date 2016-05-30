@@ -52,7 +52,7 @@
 
 	var _reactDom = __webpack_require__(38);
 
-	var _ReactSlickApp = __webpack_require__(192);
+	var _ReactSlickApp = __webpack_require__(193);
 
 	var _ReactSlickApp2 = _interopRequireDefault(_ReactSlickApp);
 
@@ -20945,6 +20945,15 @@
 	            { className: 'slds-list__item nav-list' },
 	            _react2.default.createElement(
 	              'a',
+	              { href: '/board' },
+	              'Opportunity Board'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            { className: 'slds-list__item nav-list' },
+	            _react2.default.createElement(
+	              'a',
 	              { href: '/' },
 	              'Logout'
 	            )
@@ -21008,7 +21017,8 @@
 /* 189 */,
 /* 190 */,
 /* 191 */,
-/* 192 */
+/* 192 */,
+/* 193 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21033,7 +21043,7 @@
 
 	var _SideMenu2 = _interopRequireDefault(_SideMenu);
 
-	var _ReactSlickBox = __webpack_require__(193);
+	var _ReactSlickBox = __webpack_require__(194);
 
 	var _ReactSlickBox2 = _interopRequireDefault(_ReactSlickBox);
 
@@ -21070,7 +21080,7 @@
 	});
 
 /***/ },
-/* 193 */
+/* 194 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21083,21 +21093,21 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _reactSlick = __webpack_require__(194);
+	var _reactSlick = __webpack_require__(195);
 
 	var _reactSlick2 = _interopRequireDefault(_reactSlick);
 
-	var _ReactSlickStarter = __webpack_require__(214);
+	var _ReactSlickStarter = __webpack_require__(215);
 
 	var _ReactSlickStarter2 = _interopRequireDefault(_ReactSlickStarter);
 
-	var _ReactSlickImages = __webpack_require__(217);
+	var _ReactSlickImages = __webpack_require__(218);
 
 	var _ReactSlickImages2 = _interopRequireDefault(_ReactSlickImages);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	__webpack_require__(220);
+	__webpack_require__(221);
 
 	exports.default = _react2.default.createClass({
 	  displayName: 'ReactSlickBox',
@@ -21147,15 +21157,15 @@
 	});
 
 /***/ },
-/* 194 */
+/* 195 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	module.exports = __webpack_require__(195);
+	module.exports = __webpack_require__(196);
 
 /***/ },
-/* 195 */
+/* 196 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21166,21 +21176,21 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _innerSlider = __webpack_require__(196);
+	var _innerSlider = __webpack_require__(197);
 
-	var _objectAssign = __webpack_require__(202);
+	var _objectAssign = __webpack_require__(203);
 
 	var _objectAssign2 = _interopRequireDefault(_objectAssign);
 
-	var _json2mq = __webpack_require__(209);
+	var _json2mq = __webpack_require__(210);
 
 	var _json2mq2 = _interopRequireDefault(_json2mq);
 
-	var _reactResponsiveMixin = __webpack_require__(211);
+	var _reactResponsiveMixin = __webpack_require__(212);
 
 	var _reactResponsiveMixin2 = _interopRequireDefault(_reactResponsiveMixin);
 
-	var _defaultProps = __webpack_require__(204);
+	var _defaultProps = __webpack_require__(205);
 
 	var _defaultProps2 = _interopRequireDefault(_defaultProps);
 
@@ -21257,7 +21267,7 @@
 	module.exports = Slider;
 
 /***/ },
-/* 196 */
+/* 197 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21274,31 +21284,31 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _mixinsEventHandlers = __webpack_require__(197);
+	var _mixinsEventHandlers = __webpack_require__(198);
 
 	var _mixinsEventHandlers2 = _interopRequireDefault(_mixinsEventHandlers);
 
-	var _mixinsHelpers = __webpack_require__(200);
+	var _mixinsHelpers = __webpack_require__(201);
 
 	var _mixinsHelpers2 = _interopRequireDefault(_mixinsHelpers);
 
-	var _initialState = __webpack_require__(203);
+	var _initialState = __webpack_require__(204);
 
 	var _initialState2 = _interopRequireDefault(_initialState);
 
-	var _defaultProps = __webpack_require__(204);
+	var _defaultProps = __webpack_require__(205);
 
 	var _defaultProps2 = _interopRequireDefault(_defaultProps);
 
-	var _classnames = __webpack_require__(205);
+	var _classnames = __webpack_require__(206);
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
-	var _track = __webpack_require__(206);
+	var _track = __webpack_require__(207);
 
-	var _dots = __webpack_require__(207);
+	var _dots = __webpack_require__(208);
 
-	var _arrows = __webpack_require__(208);
+	var _arrows = __webpack_require__(209);
 
 	var InnerSlider = _react2['default'].createClass({
 	  displayName: 'InnerSlider',
@@ -21451,7 +21461,7 @@
 	exports.InnerSlider = InnerSlider;
 
 /***/ },
-/* 197 */
+/* 198 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21461,13 +21471,13 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _trackHelper = __webpack_require__(198);
+	var _trackHelper = __webpack_require__(199);
 
-	var _helpers = __webpack_require__(200);
+	var _helpers = __webpack_require__(201);
 
 	var _helpers2 = _interopRequireDefault(_helpers);
 
-	var _objectAssign = __webpack_require__(202);
+	var _objectAssign = __webpack_require__(203);
 
 	var _objectAssign2 = _interopRequireDefault(_objectAssign);
 
@@ -21640,7 +21650,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 198 */
+/* 199 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21650,7 +21660,7 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _ReactDOM = __webpack_require__(199);
+	var _ReactDOM = __webpack_require__(200);
 
 	var _ReactDOM2 = _interopRequireDefault(_ReactDOM);
 
@@ -21766,7 +21776,7 @@
 	exports.getTrackLeft = getTrackLeft;
 
 /***/ },
-/* 199 */
+/* 200 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21791,7 +21801,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 200 */
+/* 201 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21806,17 +21816,17 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _ReactDOM = __webpack_require__(199);
+	var _ReactDOM = __webpack_require__(200);
 
 	var _ReactDOM2 = _interopRequireDefault(_ReactDOM);
 
-	var _reactLibReactTransitionEvents = __webpack_require__(201);
+	var _reactLibReactTransitionEvents = __webpack_require__(202);
 
 	var _reactLibReactTransitionEvents2 = _interopRequireDefault(_reactLibReactTransitionEvents);
 
-	var _trackHelper = __webpack_require__(198);
+	var _trackHelper = __webpack_require__(199);
 
-	var _objectAssign = __webpack_require__(202);
+	var _objectAssign = __webpack_require__(203);
 
 	var _objectAssign2 = _interopRequireDefault(_objectAssign);
 
@@ -22092,7 +22102,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 201 */
+/* 202 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -22170,7 +22180,7 @@
 	module.exports = ReactTransitionEvents;
 
 /***/ },
-/* 202 */
+/* 203 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -22202,7 +22212,7 @@
 
 
 /***/ },
-/* 203 */
+/* 204 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -22252,7 +22262,7 @@
 	module.exports = initialState;
 
 /***/ },
-/* 204 */
+/* 205 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -22305,7 +22315,7 @@
 	module.exports = defaultProps;
 
 /***/ },
-/* 205 */
+/* 206 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -22359,7 +22369,7 @@
 
 
 /***/ },
-/* 206 */
+/* 207 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22374,11 +22384,11 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _objectAssign = __webpack_require__(202);
+	var _objectAssign = __webpack_require__(203);
 
 	var _objectAssign2 = _interopRequireDefault(_objectAssign);
 
-	var _classnames = __webpack_require__(205);
+	var _classnames = __webpack_require__(206);
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
@@ -22512,7 +22522,7 @@
 	exports.Track = Track;
 
 /***/ },
-/* 207 */
+/* 208 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22527,7 +22537,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _classnames = __webpack_require__(205);
+	var _classnames = __webpack_require__(206);
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
@@ -22591,7 +22601,7 @@
 	exports.Dots = Dots;
 
 /***/ },
-/* 208 */
+/* 209 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22608,7 +22618,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _classnames = __webpack_require__(205);
+	var _classnames = __webpack_require__(206);
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
@@ -22706,10 +22716,10 @@
 	exports.NextArrow = NextArrow;
 
 /***/ },
-/* 209 */
+/* 210 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var camel2hyphen = __webpack_require__(210);
+	var camel2hyphen = __webpack_require__(211);
 
 	var isDimension = function (feature) {
 	  var re = /[height|width]$/;
@@ -22762,7 +22772,7 @@
 	module.exports = json2mq;
 
 /***/ },
-/* 210 */
+/* 211 */
 /***/ function(module, exports) {
 
 	var camel2hyphen = function (str) {
@@ -22776,12 +22786,12 @@
 	module.exports = camel2hyphen;
 
 /***/ },
-/* 211 */
+/* 212 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var canUseDOM = __webpack_require__(212);
-	var enquire = canUseDOM && __webpack_require__(213);
-	var json2mq = __webpack_require__(209);
+	var canUseDOM = __webpack_require__(213);
+	var enquire = canUseDOM && __webpack_require__(214);
+	var json2mq = __webpack_require__(210);
 
 	var ResponsiveMixin = {
 	  media: function (query, handler) {
@@ -22811,7 +22821,7 @@
 	module.exports = ResponsiveMixin;
 
 /***/ },
-/* 212 */
+/* 213 */
 /***/ function(module, exports) {
 
 	var canUseDOM = !!(
@@ -22823,7 +22833,7 @@
 	module.exports = canUseDOM;
 
 /***/ },
-/* 213 */
+/* 214 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -23121,7 +23131,7 @@
 	}));
 
 /***/ },
-/* 214 */
+/* 215 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -23134,13 +23144,13 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _reactSlick = __webpack_require__(194);
+	var _reactSlick = __webpack_require__(195);
 
 	var _reactSlick2 = _interopRequireDefault(_reactSlick);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	__webpack_require__(215);
+	__webpack_require__(216);
 
 	exports.default = _react2.default.createClass({
 	  displayName: 'ReactSlickStarter',
@@ -23228,13 +23238,13 @@
 	});
 
 /***/ },
-/* 215 */
+/* 216 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(216);
+	var content = __webpack_require__(217);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(173)(content, {});
@@ -23254,7 +23264,7 @@
 	}
 
 /***/ },
-/* 216 */
+/* 217 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(172)();
@@ -23268,7 +23278,7 @@
 
 
 /***/ },
-/* 217 */
+/* 218 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -23281,13 +23291,13 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _reactSlick = __webpack_require__(194);
+	var _reactSlick = __webpack_require__(195);
 
 	var _reactSlick2 = _interopRequireDefault(_reactSlick);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	__webpack_require__(218);
+	__webpack_require__(219);
 
 	exports.default = _react2.default.createClass({
 	  displayName: 'ReactSlickImages',
@@ -23321,13 +23331,13 @@
 	});
 
 /***/ },
-/* 218 */
+/* 219 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(219);
+	var content = __webpack_require__(220);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(173)(content, {});
@@ -23347,7 +23357,7 @@
 	}
 
 /***/ },
-/* 219 */
+/* 220 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(172)();
@@ -23361,13 +23371,13 @@
 
 
 /***/ },
-/* 220 */
+/* 221 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(221);
+	var content = __webpack_require__(222);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(173)(content, {});
@@ -23387,7 +23397,7 @@
 	}
 
 /***/ },
-/* 221 */
+/* 222 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(172)();

@@ -52,7 +52,7 @@
 
 	var _reactDom = __webpack_require__(38);
 
-	var _DiscussionApp = __webpack_require__(184);
+	var _DiscussionApp = __webpack_require__(185);
 
 	var _DiscussionApp2 = _interopRequireDefault(_DiscussionApp);
 
@@ -20945,6 +20945,15 @@
 	            { className: 'slds-list__item nav-list' },
 	            _react2.default.createElement(
 	              'a',
+	              { href: '/board' },
+	              'Opportunity Board'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            { className: 'slds-list__item nav-list' },
+	            _react2.default.createElement(
+	              'a',
 	              { href: '/' },
 	              'Logout'
 	            )
@@ -21000,7 +21009,8 @@
 /* 181 */,
 /* 182 */,
 /* 183 */,
-/* 184 */
+/* 184 */,
+/* 185 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21025,7 +21035,7 @@
 
 	var _SideMenu2 = _interopRequireDefault(_SideMenu);
 
-	var _CommentBox = __webpack_require__(185);
+	var _CommentBox = __webpack_require__(186);
 
 	var _CommentBox2 = _interopRequireDefault(_CommentBox);
 
@@ -21062,7 +21072,7 @@
 	});
 
 /***/ },
-/* 185 */
+/* 186 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21075,11 +21085,11 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _CommentForm = __webpack_require__(186);
+	var _CommentForm = __webpack_require__(187);
 
 	var _CommentForm2 = _interopRequireDefault(_CommentForm);
 
-	var _CommentList = __webpack_require__(187);
+	var _CommentList = __webpack_require__(188);
 
 	var _CommentList2 = _interopRequireDefault(_CommentList);
 
@@ -21146,7 +21156,7 @@
 	});
 
 /***/ },
-/* 186 */
+/* 187 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21240,7 +21250,7 @@
 	});
 
 /***/ },
-/* 187 */
+/* 188 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21253,7 +21263,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Comment = __webpack_require__(188);
+	var _Comment = __webpack_require__(189);
 
 	var _Comment2 = _interopRequireDefault(_Comment);
 
@@ -21288,7 +21298,7 @@
 	});
 
 /***/ },
-/* 188 */
+/* 189 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";

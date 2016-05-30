@@ -52,13 +52,13 @@
 
 	var _reactDom = __webpack_require__(38);
 
-	var _TodoApp = __webpack_require__(223);
+	var _BoardApp = __webpack_require__(168);
 
-	var _TodoApp2 = _interopRequireDefault(_TodoApp);
+	var _BoardApp2 = _interopRequireDefault(_BoardApp);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	(0, _reactDom.render)(_react2.default.createElement(_TodoApp2.default, null), document.getElementById('app'));
+	(0, _reactDom.render)(_react2.default.createElement(_BoardApp2.default, null), document.getElementById('app'));
 
 /***/ },
 /* 1 */
@@ -20334,7 +20334,68 @@
 	module.exports = ReactMount.renderSubtreeIntoContainer;
 
 /***/ },
-/* 168 */,
+/* 168 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _Header = __webpack_require__(169);
+
+	var _Header2 = _interopRequireDefault(_Header);
+
+	var _PageHeader = __webpack_require__(174);
+
+	var _PageHeader2 = _interopRequireDefault(_PageHeader);
+
+	var _SideMenu = __webpack_require__(177);
+
+	var _SideMenu2 = _interopRequireDefault(_SideMenu);
+
+	var _BoardBox = __webpack_require__(226);
+
+	var _BoardBox2 = _interopRequireDefault(_BoardBox);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = _react2.default.createClass({
+	  displayName: 'BoardApp',
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'div',
+	      { className: 'counter-app-component' },
+	      _react2.default.createElement(_Header2.default, null),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'slds-grid' },
+	        _react2.default.createElement(
+	          'nav',
+	          { role: 'nav', className: 'slds-col slds-size--2-of-12 siteNavi' },
+	          _react2.default.createElement(_SideMenu2.default, null)
+	        ),
+	        _react2.default.createElement(
+	          'main',
+	          { className: 'slds-col slds-size--10-of-12 siteMain' },
+	          _react2.default.createElement(_PageHeader2.default, { title: 'Opportunity Board Pages' }),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'slds-m-around--small' },
+	            _react2.default.createElement(_BoardBox2.default, null)
+	          )
+	        )
+	      )
+	    );
+	  }
+	});
+
+/***/ },
 /* 169 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -21048,7 +21109,10 @@
 /* 220 */,
 /* 221 */,
 /* 222 */,
-/* 223 */
+/* 223 */,
+/* 224 */,
+/* 225 */,
+/* 226 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21061,79 +21125,41 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Header = __webpack_require__(169);
+	var _BoardItem = __webpack_require__(227);
 
-	var _Header2 = _interopRequireDefault(_Header);
-
-	var _PageHeader = __webpack_require__(174);
-
-	var _PageHeader2 = _interopRequireDefault(_PageHeader);
-
-	var _SideMenu = __webpack_require__(177);
-
-	var _SideMenu2 = _interopRequireDefault(_SideMenu);
-
-	var _TodoCreator = __webpack_require__(224);
-
-	var _TodoCreator2 = _interopRequireDefault(_TodoCreator);
-
-	var _TodoList = __webpack_require__(225);
-
-	var _TodoList2 = _interopRequireDefault(_TodoList);
+	var _BoardItem2 = _interopRequireDefault(_BoardItem);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	exports.default = _react2.default.createClass({
-	  displayName: 'TodoApp',
-
-
-	  getInitialState: function getInitialState() {
-	    return {
-	      todos: []
-	    };
-	  },
-
-	  onAdd: function onAdd(newTodo) {
-	    this.setState({
-	      todos: this.state.todos.concat({ item: newTodo, status: 0 })
-	    });
-	  },
-
-	  onDelete: function onDelete(i) {
-	    var targetTodo = this.state.todos[i];
-	    targetTodo.status = !targetTodo.status;
-	    this.setState({
-	      todos: this.state.todos
-	    });
-	  },
+	  displayName: 'BoardBox',
 
 	  render: function render() {
 	    return _react2.default.createElement(
 	      'div',
-	      { className: 'todo-app-component' },
-	      _react2.default.createElement(_Header2.default, null),
+	      { className: 'board-box-component' },
 	      _react2.default.createElement(
-	        'div',
-	        { className: 'slds-grid' },
+	        'ul',
+	        null,
 	        _react2.default.createElement(
-	          'nav',
-	          { role: 'nav', className: 'slds-col slds-size--2-of-12 siteNavi' },
-	          _react2.default.createElement(_SideMenu2.default, null)
+	          'li',
+	          { className: 'slds-m-bottom--small' },
+	          _react2.default.createElement(_BoardItem2.default, { opportunity: "Buy - Product01 License", account: "T.Yoshikawa Labs", amount: 3000, date: "2016/05/10" })
 	        ),
 	        _react2.default.createElement(
-	          'main',
-	          { className: 'slds-col slds-size--10-of-12 siteMain' },
-	          _react2.default.createElement(_PageHeader2.default, { title: 'Todo Pages' }),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'slds-m-around--small' },
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'TodoApp' },
-	              _react2.default.createElement(_TodoCreator2.default, { onAdd: this.onAdd }),
-	              _react2.default.createElement(_TodoList2.default, { todos: this.state.todos, onDelete: this.onDelete })
-	            )
-	          )
+	          'li',
+	          { className: 'slds-m-bottom--small' },
+	          _react2.default.createElement(_BoardItem2.default, { opportunity: "Buy - Product02 License", account: "T.Yoshikawa Labs", amount: 6000, date: "2016/05/11" })
+	        ),
+	        _react2.default.createElement(
+	          'li',
+	          { className: 'slds-m-bottom--small' },
+	          _react2.default.createElement(_BoardItem2.default, { opportunity: "Buy - Product03 License", account: "T.Yoshikawa Labs", amount: 4500, date: "2016/05/12" })
+	        ),
+	        _react2.default.createElement(
+	          'li',
+	          { className: 'slds-m-bottom--small' },
+	          _react2.default.createElement(_BoardItem2.default, { opportunity: "Buy - Product04 License", account: "T.Yoshikawa Labs", amount: 2300, date: "2016/05/13" })
 	        )
 	      )
 	    );
@@ -21141,7 +21167,7 @@
 	});
 
 /***/ },
-/* 224 */
+/* 227 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21156,53 +21182,90 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+	__webpack_require__(228);
+
 	exports.default = _react2.default.createClass({
-	  displayName: 'TodoCreator',
+	  displayName: 'BoardItem',
+
+
+	  componentDidMount: function componentDidMount() {
+	    this._autoCountup();
+	  },
 
 	  getInitialState: function getInitialState() {
 	    return {
-	      subjectVal: ""
+	      countNum: this.props.amount / 2,
+	      autoCountUpId: null
 	    };
 	  },
 
-	  _onAdd: function _onAdd() {
-	    var newTodo = this.refs.subject.value;
-	    if (!newTodo) {
-	      alert('値を入力してください');
-	      return false;
-	    }
-
-	    this.props.onAdd(newTodo);
-	    this.setState({ subjectVal: "" });
+	  _autoCountup: function _autoCountup() {
+	    var intervalId = setInterval(this._autoCountupAction, 1);
+	    this.setState({ autoCountUpId: intervalId });
 	  },
 
-	  _onChange: function _onChange(e) {
-	    this.setState({
-	      subjectVal: e.target.value
-	    });
+	  _autoCountupAction: function _autoCountupAction() {
+	    if (this.state.countNum < this.props.amount) {
+	      this.setState({ countNum: this.state.countNum + 1 });
+	    } else {
+	      clearInterval(this.state.autoCountUpId);
+	    }
 	  },
 
 	  render: function render() {
 	    return _react2.default.createElement(
 	      'div',
-	      { className: 'todo-creator-component' },
+	      { className: 'board-item-component' },
 	      _react2.default.createElement(
 	        'div',
-	        { className: 'slds-box slds-m-bottom--small' },
+	        { className: 'slds-box' },
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'slds-form-element' },
+	          { className: 'slds-tile slds-tile--board' },
+	          _react2.default.createElement(
+	            'p',
+	            { className: 'slds-tile__title slds-truncate' },
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'javascript:void(0);' },
+	              this.props.opportunity
+	            )
+	          ),
 	          _react2.default.createElement(
 	            'div',
-	            { className: 'slds-form-element__control slds-input-has-fixed-addon' },
-	            _react2.default.createElement('input', { className: 'slds-input', type: 'text', value: this.state.subjectVal, ref: 'subject', placeholder: 'Input your new todo', onChange: this._onChange }),
+	            { className: 'slds-tile__detail' },
+	            _react2.default.createElement(
+	              'p',
+	              { className: 'slds-text-heading--medium amount-label' },
+	              '$',
+	              this.state.countNum
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              { className: 'slds-truncate' },
+	              _react2.default.createElement(
+	                'a',
+	                { href: 'javascript:void(0);' },
+	                this.props.account
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              { className: 'slds-truncate slds-has-alert' },
+	              this.props.date
+	            ),
 	            _react2.default.createElement(
 	              'span',
-	              { className: 'slds-form-element__addon' },
+	              { className: 'slds-icon_container slds-tile--board__icon' },
 	              _react2.default.createElement(
-	                'button',
-	                { className: 'slds-button slds-button--brand', onClick: this._onAdd },
-	                'Add'
+	                'svg',
+	                { 'aria-hidden': 'true', className: 'slds-icon slds-icon-text-warning slds-icon--x-small' },
+	                _react2.default.createElement('use', { xlinkHref: './vendor/salesforce-lightning-design-system/assets/icons/utility-sprite/svg/symbols.svg#warning' })
+	              ),
+	              _react2.default.createElement(
+	                'span',
+	                { className: 'slds-assistive-text' },
+	                'Warning Icon'
 	              )
 	            )
 	          )
@@ -21213,139 +21276,44 @@
 	});
 
 /***/ },
-/* 225 */
+/* 228 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	// style-loader: Adds some css to the DOM by adding a <style> tag
 
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
+	// load the styles
+	var content = __webpack_require__(229);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(173)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./BoardItem.scss", function() {
+				var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./BoardItem.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
 
-	var _react = __webpack_require__(1);
+/***/ },
+/* 229 */
+/***/ function(module, exports, __webpack_require__) {
 
-	var _react2 = _interopRequireDefault(_react);
+	exports = module.exports = __webpack_require__(172)();
+	// imports
 
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	exports.default = _react2.default.createClass({
-	  displayName: "TodoList",
+	// module
+	exports.push([module.id, ".board-item-component .amount-label {\n  color: #10aa52; }\n", ""]);
 
-	  _onDelete: function _onDelete(i) {
-	    this.props.onDelete(i);
-	  },
+	// exports
 
-	  render: function render() {
-	    return _react2.default.createElement(
-	      "ul",
-	      { className: "timeline" },
-	      this.props.todos.map(function (todo, i) {
-	        return _react2.default.createElement(
-	          "li",
-	          { className: "slds-timeline__item", key: i },
-	          _react2.default.createElement(
-	            "span",
-	            { className: "slds-assistive-text" },
-	            "Task"
-	          ),
-	          _react2.default.createElement(
-	            "div",
-	            { className: "slds-media" },
-	            _react2.default.createElement(
-	              "div",
-	              { className: "slds-media__body" },
-	              _react2.default.createElement(
-	                "div",
-	                { className: "slds-media slds-media--timeline slds-timeline__media--task" },
-	                _react2.default.createElement(
-	                  "div",
-	                  { className: "slds-media__figure" },
-	                  _react2.default.createElement(
-	                    "svg",
-	                    { "aria-hidden": "true", className: "slds-icon slds-icon-standard-task slds-timeline__icon" },
-	                    _react2.default.createElement("use", { xlinkHref: "./vendor/salesforce-lightning-design-system/assets/icons/standard-sprite/svg/symbols.svg#task" })
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  "div",
-	                  { className: "slds-media__body" },
-	                  _react2.default.createElement(
-	                    "div",
-	                    { className: "slds-media slds-tile slds-media--small" },
-	                    _react2.default.createElement(
-	                      "div",
-	                      { className: "slds-media__figure" },
-	                      _react2.default.createElement(
-	                        "label",
-	                        { className: "slds-checkbox" },
-	                        _react2.default.createElement("input", { type: "checkbox", onClick: this._onDelete.bind(this, i) }),
-	                        _react2.default.createElement("span", { className: "slds-checkbox--faux" }),
-	                        _react2.default.createElement(
-	                          "span",
-	                          { className: "slds-form-element__label slds-assistive-text" },
-	                          "Hello"
-	                        )
-	                      )
-	                    ),
-	                    _react2.default.createElement(
-	                      "div",
-	                      { className: "slds-media__body" },
-	                      _react2.default.createElement(
-	                        "p",
-	                        { className: "slds-tile__title slds-truncate" },
-	                        function () {
-	                          if (todo.status == 0) {
-	                            return _react2.default.createElement(
-	                              "a",
-	                              { href: "#" },
-	                              todo.item
-	                            );
-	                          } else {
-	                            return _react2.default.createElement(
-	                              "a",
-	                              { href: "#" },
-	                              _react2.default.createElement(
-	                                "s",
-	                                null,
-	                                todo.item
-	                              )
-	                            );
-	                          }
-	                        }()
-	                      ),
-	                      _react2.default.createElement(
-	                        "ul",
-	                        { className: "slds-tile__detail slds-list--horizontal slds-text-body--small" },
-	                        _react2.default.createElement(
-	                          "li",
-	                          { className: "slds-list__item slds-m-right--large" },
-	                          _react2.default.createElement(
-	                            "span",
-	                            null,
-	                            "Owner:"
-	                          ),
-	                          _react2.default.createElement(
-	                            "span",
-	                            { className: "slds-m-left--xx-small" },
-	                            _react2.default.createElement(
-	                              "a",
-	                              { href: "#" },
-	                              "Taiki"
-	                            )
-	                          )
-	                        )
-	                      )
-	                    )
-	                  )
-	                )
-	              )
-	            )
-	          )
-	        );
-	      }, this)
-	    );
-	  }
-	});
 
 /***/ }
 /******/ ]);

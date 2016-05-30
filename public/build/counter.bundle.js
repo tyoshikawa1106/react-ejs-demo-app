@@ -52,7 +52,7 @@
 
 	var _reactDom = __webpack_require__(38);
 
-	var _CounterApp = __webpack_require__(168);
+	var _CounterApp = __webpack_require__(184);
 
 	var _CounterApp2 = _interopRequireDefault(_CounterApp);
 
@@ -20334,68 +20334,7 @@
 	module.exports = ReactMount.renderSubtreeIntoContainer;
 
 /***/ },
-/* 168 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _Header = __webpack_require__(169);
-
-	var _Header2 = _interopRequireDefault(_Header);
-
-	var _PageHeader = __webpack_require__(174);
-
-	var _PageHeader2 = _interopRequireDefault(_PageHeader);
-
-	var _SideMenu = __webpack_require__(177);
-
-	var _SideMenu2 = _interopRequireDefault(_SideMenu);
-
-	var _CounterBox = __webpack_require__(180);
-
-	var _CounterBox2 = _interopRequireDefault(_CounterBox);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = _react2.default.createClass({
-	  displayName: 'CounterApp',
-	  render: function render() {
-	    return _react2.default.createElement(
-	      'div',
-	      { className: 'counter-app-component' },
-	      _react2.default.createElement(_Header2.default, null),
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'slds-grid' },
-	        _react2.default.createElement(
-	          'nav',
-	          { role: 'nav', className: 'slds-col slds-size--2-of-12 siteNavi' },
-	          _react2.default.createElement(_SideMenu2.default, null)
-	        ),
-	        _react2.default.createElement(
-	          'main',
-	          { className: 'slds-col slds-size--10-of-12 siteMain' },
-	          _react2.default.createElement(_PageHeader2.default, { title: 'Conter Pages' }),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'slds-m-around--small' },
-	            _react2.default.createElement(_CounterBox2.default, null)
-	          )
-	        )
-	      )
-	    );
-	  }
-	});
-
-/***/ },
+/* 168 */,
 /* 169 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -21006,6 +20945,15 @@
 	            { className: 'slds-list__item nav-list' },
 	            _react2.default.createElement(
 	              'a',
+	              { href: '/board' },
+	              'Opportunity Board'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            { className: 'slds-list__item nav-list' },
+	            _react2.default.createElement(
+	              'a',
 	              { href: '/' },
 	              'Logout'
 	            )
@@ -21308,6 +21256,68 @@
 	                )
 	              )
 	            )
+	          )
+	        )
+	      )
+	    );
+	  }
+	});
+
+/***/ },
+/* 184 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _Header = __webpack_require__(169);
+
+	var _Header2 = _interopRequireDefault(_Header);
+
+	var _PageHeader = __webpack_require__(174);
+
+	var _PageHeader2 = _interopRequireDefault(_PageHeader);
+
+	var _SideMenu = __webpack_require__(177);
+
+	var _SideMenu2 = _interopRequireDefault(_SideMenu);
+
+	var _CounterBox = __webpack_require__(180);
+
+	var _CounterBox2 = _interopRequireDefault(_CounterBox);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = _react2.default.createClass({
+	  displayName: 'CounterApp',
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'div',
+	      { className: 'counter-app-component' },
+	      _react2.default.createElement(_Header2.default, null),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'slds-grid' },
+	        _react2.default.createElement(
+	          'nav',
+	          { role: 'nav', className: 'slds-col slds-size--2-of-12 siteNavi' },
+	          _react2.default.createElement(_SideMenu2.default, null)
+	        ),
+	        _react2.default.createElement(
+	          'main',
+	          { className: 'slds-col slds-size--10-of-12 siteMain' },
+	          _react2.default.createElement(_PageHeader2.default, { title: 'Conter Pages' }),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'slds-m-around--small' },
+	            _react2.default.createElement(_CounterBox2.default, null)
 	          )
 	        )
 	      )

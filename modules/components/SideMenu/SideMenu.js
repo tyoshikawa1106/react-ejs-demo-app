@@ -12,6 +12,7 @@ export default React.createClass({
             <li className="slds-list__item nav-list"><a href="/discussion">Discussion</a></li>
             <li className="slds-list__item nav-list"><a href="/counter">Counter</a></li>
             <li className="slds-list__item nav-list"><a href="/reactslick">ReactSlick</a></li>
+            <li className="slds-list__item nav-list"><a href="/board">Opportunity Board</a></li>
             <li className="slds-list__item nav-list"><a href="/">Logout</a></li>
           </ul>
         </div>

@@ -23,6 +23,7 @@ var routesTodo = require('./routes/todo');
 var routesDiscussion = require('./routes/discussion');
 var routesCounter = require('./routes/counter');
 var routesReactSlick = require('./routes/reactslick');
+var routesBoard = require('./routes/board');
 var routesApi = require('./routes/api');
 
 // Serve static files
@@ -35,6 +36,7 @@ app.use('/todo', routesTodo);
 app.use('/discussion', routesDiscussion);
 app.use('/counter', routesCounter);
 app.use('/reactslick', routesReactSlick);
+app.use('/board', routesBoard);
 app.use('/api', routesApi);
 
 // View Engine To ejs
